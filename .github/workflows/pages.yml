@@ -23,6 +23,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install Playwright PDF renderer
+        run: |
+          mkdir -p /tmp/cv-renderer
+          npm install --prefix /tmp/cv-renderer playwright@1.56.1
+          /tmp/cv-renderer/node_modules/.bin/playwright install --with-deps chromium
+      - name: Generate current CV PDF
+        run: NODE_PATH=/tmp/cv-renderer/node_modules node scripts/generate-cv-pdf.cjs
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
