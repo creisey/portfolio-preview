@@ -114,6 +114,8 @@ h1 { font-family: var(--site-font-heading); font-size: clamp(56px, 10vw, 138px);
 .detail-meta { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
 .detail-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0 0 22px; align-items: start; }
 .detail-gallery figure { margin: 0; min-width: 0; }
+.detail-gallery.single-image { grid-template-columns: minmax(0, 1fr); max-width: 620px; }
+.detail-gallery.single-image img { aspect-ratio: 16 / 10; }
 .detail-gallery figure:nth-child(3n+2) { margin-top: 30px; }
 .detail-gallery figure:nth-child(4n+3) { margin-top: -12px; }
 .detail-gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--site-secondary); filter: saturate(.94) contrast(1.04); transition: filter .25s ease, transform .25s ease; }
@@ -199,7 +201,7 @@ body.project-open .project-detail.route-active { display: grid; }
         <article class="project-detail" id="detail-mobilitaet">
           <div><div class="detail-meta">Masterarbeit · Service Design &amp; Verhaltensänderung</div><h3>Bewegen mit Umdenken</h3></div>
           <div class="detail-copy">
-            <div class="detail-gallery"><figure><img src="https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bewegen-mit-umdenken.jpg" alt="Projektbild der Masterarbeit Bewegen mit Umdenken"><figcaption>Projektkontext</figcaption></figure><figure><img src="https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bewegen-mit-umdenken-small.jpg" alt="Weitere Ansicht der Masterarbeit"><figcaption>Konzeptvisualisierung</figcaption></figure></div>
+            <div class="detail-gallery single-image"><figure><img src="https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bewegen-mit-umdenken.jpg" alt="Projektbild der Masterarbeit Bewegen mit Umdenken"><figcaption>Bewegen mit Umdenken · Masterarbeit</figcaption></figure></div>
             <p class="detail-lead">Wie gestaltet man Veränderung so, dass Menschen sie nicht nur hinnehmen, sondern verstehen und selbst mittragen?</p>
             <p><strong>Ausgangslage</strong><br>Für rund 1'300 Mitarbeitende der geplanten zentralen Kantonsverwaltung in Emmen waren 80 Parkplätze vorgesehen. Die neue Mobilitätsrealität sollte vorbereitet werden – doch die Bedürfnisse der Mitarbeitenden waren in der bisherigen Planung zu wenig berücksichtigt.</p>
             <p><strong>Mein Ansatz</strong><br>Aus Literaturrecherche, Experteninterviews und der Analyse bestehender Interventionen entstand ein Drei-Phasen-Modell. Es visualisiert, wie unterschiedliche Massnahmen Verhalten beeinflussen, wo sie sich überschneiden und wie sich eine Intervention über die Zeit verändert.</p>
