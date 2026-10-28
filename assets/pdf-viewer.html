@@ -31,7 +31,7 @@
   </div>
   <div id="error" role="alert" hidden>Die PDF-Vorschau konnte nicht geladen werden. <a id="error-link" href="documents/bewegen-mit-umdenken.pdf" target="_blank" rel="noopener">PDF direkt öffnen ↗</a></div>
   <main id="pages"><div class="loading" id="loading">Dokument wird vorbereitet …</div></main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="pdfjs/pdf.min.js"></script>
   <script>
     (() => {
       const status = document.getElementById('status');
@@ -51,7 +51,7 @@
         return;
       }
 
-      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdfjs/pdf.worker.min.js';
       let pdfDocument;
       let zoom = 1;
       const rendered = new Map();
