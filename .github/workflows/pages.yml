@@ -27,11 +27,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Install Playwright PDF renderer
+      - name: Install PDF tools
         run: |
           mkdir -p /tmp/cv-renderer
-          npm install --prefix /tmp/cv-renderer playwright@1.56.1
+          npm install --prefix /tmp/cv-renderer playwright@1.56.1 pdfjs-dist@3.11.174
           /tmp/cv-renderer/node_modules/.bin/playwright install --with-deps chromium
+      - name: Bundle self-hosted PDF.js viewer
+        run: |
+          mkdir -p assets/pdfjs
+          cp /tmp/cv-renderer/node_modules/pdfjs-dist/build/pdf.min.js assets/pdfjs/pdf.min.js
+          cp /tmp/cv-renderer/node_modules/pdfjs-dist/build/pdf.worker.min.js assets/pdfjs/pdf.worker.min.js
+          cp /tmp/cv-renderer/node_modules/pdfjs-dist/LICENSE assets/pdfjs/LICENSE
       - name: Generate current CV PDF
         run: NODE_PATH=/tmp/cv-renderer/node_modules node scripts/generate-cv-pdf.cjs
       - name: Setup Pages
