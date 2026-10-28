@@ -191,6 +191,50 @@ body.project-open .project-detail.route-active { display: block; }
 #projekte .project-media { aspect-ratio: 1.35; min-height: 280px; }
 #projekte .project-media img { object-position: center; }
 @media (max-width: 720px) { #projekte .project, #projekte .project.feature, #projekte .project.side { grid-column: span 12; margin-top: 0; } #projekte .project-media { min-height: 245px; } }
+
+.cv-section { padding: 68px 0 86px; border-top: 2px solid var(--site-on-background); }
+.cv-top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 28px; align-items: end; }
+.cv-top h2 { margin: 8px 0 14px; font: 500 clamp(42px, 6vw, 76px)/.98 Georgia, "Times New Roman", serif; letter-spacing: -.065em; }
+.cv-intro { max-width: 760px; color: var(--muted); font-size: 16px; }
+.cv-print-action { margin: 0 0 7px; }
+.cv-print-action .button { cursor: pointer; font-family: inherit; }
+.cv-profile-line { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 22px 0 34px; padding: 13px 0; border-block: 1px solid var(--line); color: var(--muted); font-size: 11px; letter-spacing: .07em; text-transform: uppercase; }
+.cv-columns { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .85fr); gap: clamp(28px, 5vw, 68px); align-items: start; }
+.cv-columns h3 { margin: 0 0 20px; padding-bottom: 10px; border-bottom: 1px solid var(--site-on-background); font-size: clamp(23px, 2.4vw, 30px); letter-spacing: -.045em; }
+.cv-entry { display: grid; grid-template-columns: 102px minmax(0, 1fr); gap: 16px; padding: 0 0 23px; margin-bottom: 18px; border-bottom: 1px solid var(--line); break-inside: avoid; }
+.cv-date { padding-top: 3px; color: var(--site-primary); font-size: 11px; font-weight: 800; letter-spacing: .025em; }
+.cv-entry h4, .cv-skill-group h4 { margin: 0 0 4px; font-size: 15px; line-height: 1.25; }
+.cv-role { margin: 0 0 7px; font-size: 12px; font-weight: 700; }
+.cv-entry p, .cv-skill-group p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+.cv-aside > h3:not(:first-child) { margin-top: 32px; }
+.cv-entry.cv-education { grid-template-columns: 83px minmax(0, 1fr); gap: 12px; padding-bottom: 14px; margin-bottom: 14px; }
+.cv-skill-group { padding: 0 0 14px; margin-bottom: 14px; border-bottom: 1px solid var(--line); break-inside: avoid; }
+.cv-skill-group h4 { font-size: 13px; margin-bottom: 6px; }
+.cv-contact { display: grid; gap: 5px; margin-top: 26px; padding: 16px 0 0; border-top: 2px solid var(--site-on-background); font-size: 13px; }
+.cv-contact a { color: var(--site-primary); text-decoration: underline; text-underline-offset: 3px; }
+.cv-source-note { margin: 24px 0 0; color: var(--muted); font-size: 11px !important; }
+body.project-open #cv { display: none !important; }
+@media (max-width: 800px) { .cv-top { grid-template-columns: 1fr; align-items: start; } .cv-print-action { margin-top: 0; } .cv-columns { grid-template-columns: 1fr; gap: 36px; } .cv-entry { grid-template-columns: 84px minmax(0,1fr); gap: 12px; } .cv-entry.cv-education { grid-template-columns: 84px minmax(0,1fr); } }
+@media print {
+  @page { size: A4; margin: 12mm; }
+  body, #app { background: #fff !important; color: #111 !important; background-image: none !important; }
+  nav, .hero, #projekte, #profil, #kontakt, footer, .contact, .cv-print-action, .wrap > .projects:not(#projekte) { display: none !important; }
+  #cv { display: block !important; width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; border: 0 !important; }
+  #cv .cv-top { display: block; }
+  #cv h2 { font-size: 30pt; margin-bottom: 4mm; }
+  #cv .cv-intro { font-size: 9.5pt; max-width: none; }
+  #cv .cv-profile-line { gap: 3mm 7mm; margin: 4mm 0 6mm; padding: 3mm 0; color: #444; }
+  #cv .cv-columns { grid-template-columns: 1.3fr .9fr; gap: 7mm; }
+  #cv .cv-columns h3 { font-size: 14pt; margin-bottom: 4mm; }
+  #cv .cv-entry { grid-template-columns: 21mm minmax(0,1fr); gap: 3mm; padding-bottom: 2.5mm; margin-bottom: 2mm; }
+  #cv .cv-entry h4 { font-size: 9.5pt; }
+  #cv .cv-role { font-size: 8.5pt; }
+  #cv .cv-entry p, #cv .cv-skill-group p { font-size: 8pt; line-height: 1.3; color: #222 !important; }
+  #cv .cv-date { font-size: 8pt; }
+  #cv .cv-entry.cv-education { grid-template-columns: 17mm minmax(0,1fr); }
+  #cv .cv-source-note { font-size: 7.5pt !important; }
+  #cv a { color: #111 !important; }
+}
 </style>
 </head>
 <body>
@@ -198,7 +242,7 @@ body.project-open .project-detail.route-active { display: block; }
   <div class="wrap">
     <nav aria-label="Hauptnavigation">
       <a class="brand" href="#top"><span class="domain">josi.as</span><span class="descriptor">Josias Marti · Design</span></a>
-      <div class="navlinks"><a href="#projekte">Projekte</a><a href="#profil">Profil</a><a href="#kontakt">Kontakt</a></div>
+      <div class="navlinks"><a href="#projekte">Projekte</a><a href="#profil">Profil</a><a href="#cv">CV</a><a href="#kontakt">Kontakt</a></div>
     </nav>
     <header class="hero" id="top">
       <div>
@@ -318,7 +362,40 @@ body.project-open .project-detail.route-active { display: block; }
     </section>
   </div>
   <section class="about" id="profil"><div class="wrap about-inner"><div><div class="eyebrow">Ein bisschen über mich</div><h2>Ich denke gern<br>quer. Und dann<br>baue ich es.</h2></div><div><p class="lead">Mich interessieren die Ecken, Kanten und Möglichkeiten, die auftauchen, wenn man nicht sofort den naheliegenden Weg nimmt.</p><p>Ich bin neugierig, manchmal hartnäckig und lieber mitten im Prozess als nur beim fertigen Bild. Ich will verstehen, wie etwas funktioniert, warum es so gemacht wird und ob es noch einen anderen Weg gibt. Mein Hintergrund verbindet Industrial Design mit technischem Handwerk. Das heisst: Ideen dürfen gross sein, müssen sich aber auch in Material, Konstruktion und Alltag bewähren.</p><p>Ich mag keine Lösungen, die nur auf dem Bildschirm überzeugen. Mich interessiert der Moment, in dem eine Skizze zum Modell wird, ein Detail plötzlich Sinn ergibt oder ein Versuch scheitert und dadurch eine bessere Idee entsteht.</p><div class="skills"><div class="skill"><strong>Quer denken</strong>Bekannte Wege freundlich infrage stellen</div><div class="skill"><strong>Ausprobieren</strong>Lieber testen als endlos theoretisieren</div><div class="skill"><strong>Dranbleiben</strong>Details verbessern, bis es sich richtig anfühlt</div><div class="skill"><strong>Zusammen weiterdenken</strong>Gute Ideen werden im Austausch besser</div></div></div></div></section>
-  <div class="wrap"><section class="projects" style="padding-bottom:56px"><div class="section-head"><div><div class="eyebrow">Berufliche Erfahrung</div><h2>Design im industriellen Kontext.</h2></div><p>Ausgewählte Unternehmen und Projektfelder aus der bisherigen Arbeit.</p></div><p style="max-width:800px;color:var(--muted)">ROCHE Diagnostics · Laborgeräte und Produktfamilien &nbsp; / &nbsp; Laufen · Waschbecken und Dusch-WC &nbsp; / &nbsp; Komax · Drahtmanagementmaschinen &nbsp; / &nbsp; Duscholux · Badewannen &nbsp; / &nbsp; JTI · Produktlinie und Design-Guidelines &nbsp; / &nbsp; Meyer Burger · Drahtsägemaschinen</p></section>
+  <div class="wrap"><section class="cv-section" id="cv" aria-labelledby="cv-title">
+    <div class="cv-top"><div><div class="eyebrow">Beruflicher Hintergrund</div><h2 id="cv-title">Lebenslauf</h2><p class="cv-intro">Ich verbinde Industrial Design, Service Design und technische Umsetzung. Mein Weg vom Werkzeugbau über IT und Datenschutz bis zur Gestaltung hilft mir, Probleme aus mehreren Blickwinkeln zu verstehen und Ideen in die Praxis zu bringen.</p></div><div class="actions cv-print-action"><button class="button" type="button" id="print-cv">CV drucken / als PDF speichern ↗</button><a class="button secondary" href="mailto:marti@josi.as">Kontakt aufnehmen</a></div></div>
+    <div class="cv-profile-line"><span>Industrial Design</span><span>Service Design</span><span>IT &amp; Datenschutz</span><span>Produktentwicklung</span></div>
+    <div class="cv-columns">
+      <div class="cv-main"><h3>Berufserfahrung</h3>
+        <article class="cv-entry"><div class="cv-date">2022–heute</div><div><h4>Stiftung Maihof Zug</h4><div class="cv-role">IT- und Datenschutzverantwortlicher</div><p>Modernisierung der Infrastruktur, Cloudmigration und Systemadministration. Erarbeitung des Datenschutzkonzepts sowie Aufbau und Pflege der IT-Dokumentation.</p></div></article>
+        <article class="cv-entry"><div class="cv-date">2021–heute</div><div><h4>Freelancer</h4><div class="cv-role">Produktlinien und Produktportfolio</div><p>Erneuerung der Produktlinien der speedgoat GmbH und Harmonisierung des Produktelineups.</p></div></article>
+        <article class="cv-entry"><div class="cv-date">2016–2019</div><div><h4>Vetica Group AG</h4><div class="cv-role">Industrial Designer · Medizinaltechnik und Investitionsgüter</div><p>Konzeption, Idee, Entwurf und Umsetzung von Produkten und 3D-Objekten mittels Skizzen, CAD und Modellbau. Workshops und Kundenpräsentationen sowie Projekt- und Teilprojektleitung mit Koordination verschiedener Kundenprojekte. Zusätzlich IT-Verantwortung.</p></div></article>
+        <article class="cv-entry"><div class="cv-date">2014–2016</div><div><h4>Consolvo Informatik AG</h4><div class="cv-role">System Engineer</div><p>System Engineering und IT-Betrieb.</p></div></article>
+        <article class="cv-entry"><div class="cv-date">2013–2014</div><div><h4>B,S,S. Volkswirtschaftliche Beratung</h4><div class="cv-role">IT-Support 1st/2nd Level · Systemadministration</div><p>IT-Support und Betreuung der Systemumgebung.</p></div></article>
+        <article class="cv-entry"><div class="cv-date">2013</div><div><h4>Bedag AG · befristeter Einsatz</h4><p>Zweimonatiger Einsatz zur Betreuung und Restrukturierung einer virtuellen Umgebung.</p></div></article>
+        <article class="cv-entry"><div class="cv-date">2012</div><div><h4>B,S,S. Volkswirtschaftliche Beratung · Swissmedic</h4><p>IT-Support und Systemadministration bei B,S,S.; zweimonatiger Zivildiensteinsatz bei Swissmedic mit Administration, SharePoint-Migration und Datenarchivierung.</p></div></article>
+        <article class="cv-entry"><div class="cv-date">2011</div><div><h4>Inselspital Bern</h4><div class="cv-role">Serververwaltung · IT-Support</div><p>Serververwaltung und 1st/2nd-Level-Support.</p></div></article>
+        <article class="cv-entry"><div class="cv-date">2010</div><div><h4>Spital Davos</h4><div class="cv-role">Zivildienst · IT-Support</div><p>Dreimonatiger Einsatz mit 1st/2nd-Level-Support und VM-Administration.</p></div></article>
+        <article class="cv-entry"><div class="cv-date">2008–2010</div><div><h4>Net4you GmbH</h4><p>Wartung von Kundenservern und Netzwerken sowie Installation und Konfiguration von Software.</p></div></article>
+        <article class="cv-entry"><div class="cv-date">2001–2005</div><div><h4>Marcel Bützer AG</h4><div class="cv-role">Lehre als Polymechaniker</div><p>Werkzeugbau und Kunststoff-Spritzgiessen.</p></div></article>
+      </div>
+      <aside class="cv-aside"><h3>Ausbildung</h3>
+        <article class="cv-entry cv-education"><div class="cv-date">2019–2021</div><div><h4>Master of Arts Service Design</h4><div class="cv-role">HSLU</div><p>Designmethoden und -prozesse, Blueprints und Design Leadership. Komplexe Probleme ganzheitlich erfassen, kartografieren und ihren Ursprung erkennen.</p></div></article>
+        <article class="cv-entry cv-education"><div class="cv-date">2011–2014</div><div><h4>Bachelor of Arts Industrial Design</h4><div class="cv-role">FHNW</div><p>Gestaltungsprinzipien, Human-Centered Design und die Übersetzung von Entwürfen in umsetzbare Lösungen.</p></div></article>
+        <article class="cv-entry cv-education"><div class="cv-date">2008–2010</div><div><h4>Informatik</h4><div class="cv-role">BFH · vier Semester</div><p>Einführungsstudium mit Java, C, Skriptsprachen, Netzwerken und Systemen.</p></div></article>
+        <article class="cv-entry cv-education"><div class="cv-date">2008</div><div><h4>Wirtschaftsinformatik</h4><div class="cv-role">BFH · ein Semester</div><p>Grundlagen in Wirtschaft, Rechnungswesen, Management und IT-Prozessen.</p></div></article>
+        <article class="cv-entry cv-education"><div class="cv-date">2006–2007</div><div><h4>Rekrutenschule Informatikpionier</h4><p>Aufbau und Administration von Netzwerken.</p></div></article>
+        <article class="cv-entry cv-education"><div class="cv-date">2005–2006</div><div><h4>Berufsmaturitätsschule</h4><div class="cv-role">GIBB Bern</div></div></article>
+        <h3>Kompetenzen</h3><div class="cv-skill-group"><h4>Design und Methodik</h4><p>Industrial Design, Service Design, Design Thinking, Human-Centered Design, Konzeption, Gestaltung, Prozessdigitalisierung, Projektleitung, Workshops und Kundenpräsentationen.</p></div>
+        <div class="cv-skill-group"><h4>IT und Betrieb</h4><p>Microsoft 365 und Azure, Softwareverteilung, Netzwerke, Backup- und Firewallmanagement (Fortigate, Zyxel), VoIP, Terminalserver, NAS/SAN, SharePoint, macOS und Server, Linux und Unix.</p></div>
+        <div class="cv-skill-group"><h4>Designsoftware</h4><p>Adobe CC, Final Cut Studio, KeyShot, Cinema 4D, SolidWorks, Rhinoceros und RhinoCAM.</p></div>
+        <div class="cv-skill-group"><h4>Sprachen</h4><p>Englisch: C1 (CEFR), schriftlich und mündlich. Französisch: Kenntnisse vorhanden; im Ausgangs-CV ohne Niveauangabe.</p></div>
+        <div class="cv-skill-group"><h4>Interessen</h4><p>Wandern, Lesen, Maker-Szene, Fotografie, Kulturen, Reisen und Sport.</p></div>
+        <div class="cv-contact"><strong>Kontakt</strong><a href="mailto:marti@josi.as">marti@josi.as</a><a href="tel:+41774053735">+41 77 405 37 35</a></div>
+      </aside>
+    </div>
+    <p class="cv-source-note">Die öffentliche Webfassung fasst den eingereichten Lebenslauf strukturiert zusammen. Geburtsdatum, Zivilstand, Angaben zu Kindern und Heimatort sind hier bewusst nicht aufgeführt.</p>
+  </section>
   <section class="contact" id="kontakt"><div class="contact-inner"><div><div class="eyebrow">Keine Angst vor schrägen Ideen</div><h2>Was, wenn wir<br>es anders machen?</h2><p>Du hast eine knifflige Frage, eine unfertige Idee oder einfach Lust, etwas neu zu denken? Schreib mir. Am Anfang muss noch nicht alles fertig sein.</p></div><div class="actions"><a class="button" href="mailto:marti@josi.as">Idee losschicken ↗</a><a class="button secondary" href="https://josi.as/">Aktuelle Website</a></div></div></section>
   <footer><span>© Josias Marti · Portfolio-Konzept</span><span>Entwurf zur Prüfung · Noch nicht veröffentlicht</span></footer></div>
 </div>
@@ -352,6 +429,8 @@ body.project-open .project-detail.route-active { display: block; }
     });
   });
   window.addEventListener('hashchange', renderRoute);
+  const printCv = document.querySelector('#print-cv');
+  if (printCv) printCv.addEventListener('click', () => window.print());
   renderRoute();
 })();
 </script>
