@@ -173,8 +173,8 @@ body.project-open .project-detail.route-active { display: grid; }
 .model-visual figcaption { margin: 8px 4px 2px; font-size: 11px; line-height: 1.45; color: var(--muted); }
 @media (max-width: 560px) { .model-visual { padding: 8px 6px; } .model-visual svg { min-width: 0; } }
 
-.digital-portfolio-embed { margin: 24px 0; }
-.digital-portfolio-frame { display: block; width: 100%; aspect-ratio: 1024 / 513; min-height: 320px; border: 1px solid var(--site-on-background); background: #fff; }
+.digital-portfolio-embed { position: relative; width: 100%; aspect-ratio: 1024 / 513; margin: 24px 0; overflow: hidden; background: transparent; }
+.digital-portfolio-frame { position: absolute; inset: 0; display: block; width: 100%; height: 100%; border: 0; margin: 0; padding: 0; background: transparent; }
 .digital-portfolio-fallback { margin-top: 10px; font-size: 13px !important; color: var(--muted); }
 .digital-portfolio-fallback a { color: var(--site-primary); font-weight: 750; text-decoration: underline; text-underline-offset: 3px; }
 </style>
