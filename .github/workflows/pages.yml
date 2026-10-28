@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -27,32 +27,6 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           enablement: true
-      - name: Fetch master thesis PDF
-        shell: bash
-        run: |
-          set -euo pipefail
-          pdf_path="assets/documents/bewegen-mit-umdenken.pdf"
-          mkdir -p "$(dirname "$pdf_path")"
-          if [ ! -s "$pdf_path" ]; then
-            tmp="$(mktemp)"
-            if curl -fLsS "https://drive.google.com/uc?export=download&id=16AHlJ5m9mnNL96y4_hCmKE8WUN0gGuw6" -o "$tmp" && [ "$(head -c 4 "$tmp")" = "%PDF" ]; then
-              mv "$tmp" "$pdf_path"
-            else
-              rm -f "$tmp"
-              echo "::warning::Google Drive did not return a PDF; leaving the Google Drive fallback in place."
-            fi
-          fi
-          if [ -s "$pdf_path" ] && [ "$(head -c 4 "$pdf_path")" = "%PDF" ]; then
-            sed -i 's#https://drive.google.com/file/d/16AHlJ5m9mnNL96y4_hCmKE8WUN0gGuw6/preview#https://creisey.github.io/portfolio-preview/assets/documents/bewegen-mit-umdenken.pdf#g' index.html
-            sed -i 's#https://drive.google.com/file/d/16AHlJ5m9mnNL96y4_hCmKE8WUN0gGuw6/view?usp=sharing#https://creisey.github.io/portfolio-preview/assets/documents/bewegen-mit-umdenken.pdf#g' index.html
-            if [ -n "$(git status --porcelain -- "$pdf_path" index.html)" ]; then
-              git config user.name "github-actions[bot]"
-              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-              git add "$pdf_path" index.html
-              git commit -m "Add master thesis PDF to preview"
-              git push
-            fi
-          fi
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
