@@ -16,13 +16,13 @@ const { chromium } = require('playwright');
 
     const htmlPath = path.join(root, 'index.html');
     await page.goto('file://' + htmlPath + '#cv', {
-      waitUntil: 'load',
+      waitUntil: 'domcontentloaded',
       timeout: 90000
     });
 
     await page.evaluate(() => {
       document.body.classList.remove('project-open');
-      document.querySelectorAll('.cv-pdf-preview').forEach(element => element.remove());
+      document.querySelectorAll('.project-details, .cv-pdf-preview').forEach(element => element.remove());
       window.location.hash = '#cv';
     });
     await page.emulateMedia({ media: 'print' });
