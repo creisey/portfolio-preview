@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF-Vorschau</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #f2f2f2; color: #181818; font: 13px/1.4 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .toolbar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-height: 44px; padding: 7px 10px; background: #292929; color: #fff; border-bottom: 1px solid #444; }
+    .toolbar .status { margin-right: auto; min-width: 100px; }
+    .toolbar button, .toolbar a { display: inline-flex; justify-content: center; align-items: center; min-height: 28px; padding: 4px 9px; border: 1px solid #777; border-radius: 3px; background: #414141; color: #fff; text-decoration: none; font: inherit; cursor: pointer; }
+    .toolbar button:disabled { opacity: .4; cursor: default; }
+    #pages { padding: 14px 8px 30px; }
+    .pdf-page { position: relative; width: max-content; max-width: 100%; margin: 0 auto 14px; background: #fff; box-shadow: 0 2px 9px rgba(0,0,0,.16); overflow: hidden; }
+    .pdf-page canvas { display: block; width: 100%; height: 100%; }
+    #error { margin: 18px; padding: 16px; background: #fff; border: 1px solid #ccc; line-height: 1.6; }
+    #error a { color: #1757a6; }
+    .loading { padding: 34px 16px; color: #555; text-align: center; }
+    @media (max-width: 560px) { .toolbar { gap: 5px; padding: 6px; } .toolbar .status { width: 100%; } #pages { padding: 8px 4px 22px; } }
+  </style>
+</head>
+<body>
+  <div class="toolbar" role="toolbar" aria-label="PDF-Werkzeuge">
+    <span class="status" id="status">PDF wird geladen …</span>
+    <button id="zoom-out" type="button" aria-label="Verkleinern">−</button>
+    <span id="zoom-label">100%</span>
+    <button id="zoom-in" type="button" aria-label="Vergrössern">+</button>
+    <a id="open-pdf" href="documents/bewegen-mit-umdenken.pdf" target="_blank" rel="noopener">PDF separat öffnen ↗</a>
+    <a id="download-pdf" href="documents/bewegen-mit-umdenken.pdf" download>Download ↓</a>
+  </div>
+  <div id="error" role="alert" hidden>Die PDF-Vorschau konnte nicht geladen werden. <a id="error-link" href="documents/bewegen-mit-umdenken.pdf" target="_blank" rel="noopener">PDF direkt öffnen ↗</a></div>
+  <main id="pages"><div class="loading" id="loading">Dokument wird vorbereitet …</div></main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script>
+    (() => {
+      const status = document.getElementById('status');
+      const pagesHost = document.getElementById('pages');
+      const loading = document.getElementById('loading');
+      const error = document.getElementById('error');
+      const file = new URLSearchParams(location.search).get('file') || 'documents/bewegen-mit-umdenken.pdf';
+      const fileUrl = new URL(file, location.href).href;
+      document.getElementById('open-pdf').href = fileUrl;
+      document.getElementById('download-pdf').href = fileUrl;
+      document.getElementById('error-link').href = fileUrl;
+
+      if (!window.pdfjsLib) {
+        status.textContent = 'PDF-Vorschau nicht verfügbar';
+        loading.hidden = true;
+        error.hidden = false;
+        return;
+      }
+
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+      let pdfDocument;
+      let zoom = 1;
+      const rendered = new Map();
+      const busy = new Set();
+      const observer = new IntersectionObserver(entries => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const item = entry.target;
+            const pageNumber = Number(item.dataset.pageNumber);
+            renderPage(pageNumber).catch(showError);
+          }
+        }
+      }, { rootMargin: '900px 0px' });
+
+      function showError(err) {
+        console.error('PDF viewer:', err);
+        status.textContent = 'PDF konnte nicht geladen werden';
+        loading.hidden = true;
+        error.hidden = false;
+      }
+
+      async function makePage(pageNumber) {
+        const page = await pdfDocument.getPage(pageNumber);
+        const baseViewport = page.getViewport({ scale: 1 });
+        const wrapper = document.createElement('section');
+        wrapper.className = 'pdf-page';
+        wrapper.dataset.pageNumber = String(pageNumber);
+        wrapper.style.aspectRatio = baseViewport.width + ' / ' + baseViewport.height;
+        wrapper.style.width = Math.min(baseViewport.width, Math.max(260, pagesHost.clientWidth - 16)) + 'px';
+        const canvas = document.createElement('canvas');
+        canvas.setAttribute('aria-label', 'Seite ' + pageNumber);
+        wrapper.appendChild(canvas);
+        pagesHost.appendChild(wrapper);
+        rendered.set(pageNumber, { page, wrapper, canvas, baseWidth: baseViewport.width });
+        observer.observe(wrapper);
+      }
+
+      async function renderPage(pageNumber) {
+        if (!pdfDocument || busy.has(pageNumber)) return;
+        const item = rendered.get(pageNumber);
+        if (!item) return;
+        const availableWidth = Math.max(240, pagesHost.clientWidth - 16);
+        const cssScale = Math.min(availableWidth / item.baseWidth, 1.5) * zoom;
+        const desiredWidth = item.baseWidth * cssScale;
+        if (item.lastWidth && Math.abs(item.lastWidth - desiredWidth) < 2) return;
+        busy.add(pageNumber);
+        try {
+          const ratio = Math.min(window.devicePixelRatio || 1, 2);
+          const viewport = item.page.getViewport({ scale: cssScale * ratio });
+          item.canvas.width = Math.floor(viewport.width);
+          item.canvas.height = Math.floor(viewport.height);
+          item.canvas.style.width = (viewport.width / ratio) + 'px';
+          item.canvas.style.height = (viewport.height / ratio) + 'px';
+          item.wrapper.style.width = (viewport.width / ratio) + 'px';
+          item.wrapper.style.aspectRatio = 'auto';
+          item.lastWidth = desiredWidth;
+          await item.page.render({ canvasContext: item.canvas.getContext('2d'), viewport }).promise;
+        } finally {
+          busy.delete(pageNumber);
+        }
+      }
+
+      document.getElementById('zoom-in').addEventListener('click', () => {
+        zoom = Math.min(zoom + .15, 2);
+        document.getElementById('zoom-label').textContent = Math.round(zoom * 100) + '%';
+        rendered.forEach((_, number) => renderPage(number).catch(showError));
+      });
+      document.getElementById('zoom-out').addEventListener('click', () => {
+        zoom = Math.max(zoom - .15, .55);
+        document.getElementById('zoom-label').textContent = Math.round(zoom * 100) + '%';
+        rendered.forEach((_, number) => renderPage(number).catch(showError));
+      });
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => rendered.forEach((_, number) => renderPage(number).catch(showError)), 120);
+      });
+
+      pdfjsLib.getDocument({ url: fileUrl }).promise.then(async pdf => {
+        pdfDocument = pdf;
+        status.textContent = 'Masterarbeit · ' + pdf.numPages + ' Seiten';
+        loading.remove();
+        for (let number = 1; number <= pdf.numPages; number += 1) {
+          await makePage(number);
+        }
+      }).catch(showError);
+    })();
+  </script>
+</body>
+</html>
