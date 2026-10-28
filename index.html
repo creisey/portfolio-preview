@@ -186,6 +186,11 @@ body.project-open .project-detail.route-active { display: block; }
 .detail-single-image { width: 100%; max-width: none; }
 .detail-gallery.single-image { width: 100%; max-width: none; }
 .detail-gallery figure:nth-child(3n+2), .detail-gallery figure:nth-child(4n+3) { margin-top: 0; }
+/* Einheitliches Raster für alle Projektkarten in der Hauptansicht. */
+#projekte .project, #projekte .project.feature, #projekte .project.side { grid-column: span 6; margin-top: 0; }
+#projekte .project-media { aspect-ratio: 1.35; min-height: 280px; }
+#projekte .project-media img { object-position: center; }
+@media (max-width: 720px) { #projekte .project, #projekte .project.feature, #projekte .project.side { grid-column: span 12; margin-top: 0; } #projekte .project-media { min-height: 245px; } }
 </style>
 </head>
 <body>
