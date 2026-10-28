@@ -22,6 +22,7 @@ const { chromium } = require('playwright');
 
     await page.evaluate(() => {
       document.body.classList.remove('project-open');
+      document.querySelectorAll('.cv-pdf-preview').forEach(element => element.remove());
       window.location.hash = '#cv';
     });
     await page.emulateMedia({ media: 'print' });
