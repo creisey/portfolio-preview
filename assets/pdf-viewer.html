@@ -132,7 +132,7 @@
 
       pdfjsLib.getDocument({ url: fileUrl }).promise.then(async pdf => {
         pdfDocument = pdf;
-        status.textContent = 'Masterarbeit · ' + pdf.numPages + ' Seiten';
+        status.textContent = 'PDF · ' + pdf.numPages + ' Seiten';
         loading.remove();
         for (let number = 1; number <= pdf.numPages; number += 1) {
           await makePage(number);
