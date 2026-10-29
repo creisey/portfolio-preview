@@ -128,6 +128,11 @@ h1 { font-family: var(--site-font-heading); font-size: clamp(56px, 10vw, 138px);
 .detail-gallery.single-image { grid-template-columns: minmax(0, 1fr); max-width: 620px; }
 .detail-gallery.single-image img { aspect-ratio: 16 / 10; }
 .detail-copy { min-width: 0; }
+.detail-video { display: block; width: 100%; max-width: 720px; margin: 18px 0 26px; clear: both; }
+.detail-video video { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #111; }
+.detail-video p { margin: 7px 0 0; }
+.detail-video a { font-size: 11px; color: var(--site-primary); }
+
 .reference-note { margin: 24px 0; padding: 18px 20px; border-left: 4px solid var(--accent-magenta); background: var(--site-secondary); color: var(--site-on-secondary); }
 .reference-note p { margin: 8px 0 0; color: inherit; }
 .reference-note a { color: var(--site-primary); font-weight: 750; text-decoration: underline; text-underline-offset: 3px; }
