@@ -46,3 +46,13 @@ Bestehende Bilder, Videos und Archivmaterial werden vorerst aus dem alten Reposi
 - [ ] Mobile Darstellung und Tastaturbedienbarkeit sind geprüft.
 - [ ] Keine Testtexte oder unbeabsichtigten persönlichen Angaben sind enthalten.
 - [ ] Produktivumstellung auf `josi.as` erst nach ausdrücklicher Freigabe.
+
+## Inhalte über Pages CMS pflegen
+
+Pages CMS ist für dieses Repository auf dem Branch `main` konfiguriert. Die Projektübersicht wird aus `content/projects.json` gespeist; die 19 Projekte sind dort als strukturierte Datensätze hinterlegt. In Pages CMS können Titel, Kurzbeschreibung, Kategorie, Bildetikett, Titelbild und Bildbeschreibung bearbeitet werden. Änderungen werden als Commits in diesem Repository gespeichert und lösen die Vorschau-Veröffentlichung über GitHub Actions aus.
+
+- CMS-Konfiguration: `.pages.yml`
+- Strukturierte Projektdaten: `content/projects.json`
+- Anzeige der CMS-Projektdaten: `assets/js/cms-content.js`
+
+Die ausführlichen Projekt-Detailtexte, Profiltexte und CV-Inhalte sind vorerst weiterhin Teil von `index.html` und noch nicht in CMS-Formulare ausgelagert. Titelbilder können weiterhin auf vorhandene Medien im alten Repository verweisen; neue Uploads gehören nach `assets/uploads`. Änderungen im alten Repository und an der produktiven Domain `josi.as` sind nicht vorgesehen.
