@@ -1,0 +1,33 @@
+# Pages CMS configuration for the preview repository.
+# The live site josi.as and the legacy repository are intentionally out of scope.
+media:
+  - name: uploads
+    label: Portfolio uploads
+    input: assets/uploads
+    output: /assets/uploads
+    rename: safe
+    categories: [image, document, video, audio]
+
+content:
+  - name: website
+    label: Website
+    type: group
+    items:
+      - name: homepage
+        label: Homepage HTML
+        type: file
+        path: index.html
+        format: code
+      - name: readme
+        label: Project documentation
+        type: file
+        path: README.md
+        format: code
+
+settings:
+  commit:
+    templates:
+      create: "content: create {path}"
+      update: "content: update {path}"
+      delete: "content: delete {path}"
+      rename: "content: rename {oldPath} -> {newPath}"
