@@ -44,6 +44,72 @@ content:
         label: Bildbeschreibung (Barrierefreiheit)
         type: string
         required: true
+      - name: detailEyebrow
+        label: Detailseite – Metadaten
+        type: string
+      - name: detailLead
+        label: Detailseite – Einleitung
+        type: text
+      - name: detailSections
+        label: Detailseite – Textabschnitte
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{heading}"
+        fields:
+          - name: heading
+            label: Zwischenüberschrift
+            type: string
+          - name: body
+            label: Text
+            type: text
+      - name: gallery
+        label: Detailseite – Bildergalerie
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{caption}"
+        fields:
+          - name: image
+            label: Bild
+            type: image
+            required: true
+          - name: alt
+            label: Bildbeschreibung
+            type: string
+          - name: caption
+            label: Bildunterschrift
+            type: string
+      - name: resources
+        label: Detailseite – Links und Downloads
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{label}"
+        fields:
+          - name: label
+            label: Linktext
+            type: string
+            required: true
+          - name: url
+            label: URL
+            type: string
+            required: true
+      - name: embedUrl
+        label: Detailseite – Einbettung URL
+        type: string
+      - name: embedTitle
+        label: Detailseite – Einbettung Titel
+        type: string
+      - name: customHtml
+        label: Detailseite – Spezialinhalt (HTML)
+        type: code
+        options:
+          language: html
+        description: Spezialinhalte wie Diagramme und PDF-Vorschauen. HTML-Kenntnisse erforderlich.
   - name: homepage
     label: Homepage
     type: file
