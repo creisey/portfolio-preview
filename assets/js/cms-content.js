@@ -51,6 +51,17 @@
       if (section.heading) wrapper.append(make("h4", "", section.heading));
       if (section.body) wrapper.append(make("p", "", section.body));
       if (section.heading || section.body) copy.append(wrapper);
+      if (section.imageAfter) {
+        const item = section.imageAfter;
+        const figure = make("figure", item.className || "");
+        const img = make("img", "");
+        img.src = item.image || "";
+        img.alt = item.alt || item.caption || project.title || "";
+        img.loading = "lazy";
+        figure.append(img);
+        if (item.caption) figure.append(make("figcaption", "", item.caption));
+        copy.append(figure);
+      }
 
       // The mobility model belongs directly after the project's approach section.
       if (project.diagramHtml && index === 1) appendHtml(copy, "detail-diagram-content", project.diagramHtml);
