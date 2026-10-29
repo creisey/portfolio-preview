@@ -385,7 +385,8 @@
         "label": "Film 3 separat öffnen ↗",
         "url": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/video/_car_in_8_.mp4"
       }
-    ]
+    ],
+    "customHtml": "<video controls preload loop> \n    <source src=\"/assets/video/kreuzung_BIGER.mp4\"></source>\n</video>\n\nMöchte man weitere Strecken zurücklegen, gelangt man in ein Ferntransfersystem. Mit diesem wird die 2er Kapsel zur Gondel.\n\n<video controls preload loop> \n    <source src=\"/assets/video/gondel-schritt.mp4\"></source>\n</video>"
   },
   {
     "slug": "clayon",
