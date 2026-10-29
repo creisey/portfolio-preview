@@ -1,0 +1,173 @@
+[
+  {
+    "slug": "mobilitaet",
+    "title": "Bewegen mit Umdenken",
+    "description": "Ein Designwerkzeug für Veränderungsprozesse: Wie Regeln, Anreize und freiwillige Erkenntnis zusammenwirken können, damit Menschen neue Wege mittragen.",
+    "category": "Service Design",
+    "label": "Masterarbeit · Service Design",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bewegen-mit-umdenken.jpg",
+    "alt": "Konzept für nachhaltige urbane Mobilität"
+  },
+  {
+    "slug": "epsilon",
+    "title": "Epsilon",
+    "description": "Konzept einer Industrienähmaschine mit Linearmotoren. Der Antrieb soll mechanische Komplexität reduzieren und den Wartungsaufwand senken.",
+    "category": "Industrie",
+    "label": "Industrie",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine03.jpg",
+    "alt": "Konstruktionskonzept einer Industrienähmaschine"
+  },
+  {
+    "slug": "bad",
+    "title": "Badezimmermöbel",
+    "description": "Eine Sitzbank aus Fichte, aufgebaut aus vier CNC-gefrästen Elementen. Die Konstruktion verbindet eine klare Form mit einer reduzierten Montage.",
+    "category": "Eigenprojekt",
+    "label": "Eigenprojekt",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank5.jpg",
+    "alt": "Sitzbank aus Fichtenholz im Badezimmer"
+  },
+  {
+    "slug": "hund",
+    "title": "Spielzeug Hund",
+    "description": "Ein kleiner Ziehhund aus Fichtenholz. Räder und Kordel machen aus einer einfachen Form ein haptisches Spielobjekt.",
+    "category": "Produktdesign",
+    "label": "Produktdesign",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/hund1.jpg",
+    "alt": "Handgefertigter Ziehhund aus Holz"
+  },
+  {
+    "slug": "sekretaer",
+    "title": "Sekretär Erweiterung",
+    "description": "Eine Erweiterung für den IKEA MICKE, gefertigt aus geölter Eiche. Steckverbindungen halten die Konstruktion zusammen und prägen zugleich das Erscheinungsbild.",
+    "category": "Möbel",
+    "label": "Möbel",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer1.jpg",
+    "alt": "Erweiterung des IKEA MICKE Sekretärs aus Holz"
+  },
+  {
+    "slug": "dog",
+    "title": "DOG Spiel",
+    "description": "Eine eigene Interpretation des Brettspiels DOG. Der modulare Aufbau und die kompakte Ausführung machen das Spiel praktisch für unterwegs.",
+    "category": "Eigenprojekt",
+    "label": "Eigenprojekt",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dog0.jpg",
+    "alt": "Selbst gestaltetes DOG Brettspiel aus Holz"
+  },
+  {
+    "slug": "cesta",
+    "title": "Cesta",
+    "description": "Aus zweidimensionalem Planenmaterial wird durch Falttechnik ein dreidimensionaler Wäschekorb, der sich auf dem Rücken tragen lässt.",
+    "category": "Produktdesign",
+    "label": "Bachelor · Produktdesign",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_1.jpg",
+    "alt": "Cesta, ein faltbarer Wäschekorb zum Tragen auf dem Rücken"
+  },
+  {
+    "slug": "car",
+    "title": "Car Utopia",
+    "description": "Ein Zukunftsszenario mit autonomen Zweiplätzern im Nahverkehr und einem Gondelsystem für längere Strecken.",
+    "category": "Mobilität",
+    "label": "Bachelor · Mobilität",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/car_side.jpg",
+    "alt": "Car Utopia, Konzept für autonome urbane Mobilität"
+  },
+  {
+    "slug": "clayon",
+    "title": "Clayon",
+    "description": "Ein leichtes Schlafsystem mit integrierter Federung, das dünne Matratzen und individuell anpassbare Auflagezonen ermöglicht.",
+    "category": "Produktdesign",
+    "label": "Bachelor · Produktentwicklung",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_1.jpg",
+    "alt": "Clayon, ein leichtes Schlafsystem mit integrierter Federung"
+  },
+  {
+    "slug": "teapot",
+    "title": "Teekannen-Konzept",
+    "description": "Eine Auseinandersetzung mit der Teezubereitung und dem richtigen Zeitpunkt, Teebeutel oder Teeei aus dem Wasser zu nehmen.",
+    "category": "Produktdesign",
+    "label": "Bachelor · Produktdesign",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot05.jpg",
+    "alt": "Teekannen-Konzept aus einer Bachelorarbeit"
+  },
+  {
+    "slug": "leica",
+    "title": "Leica M8 · Rendering",
+    "description": "Ein Photoshop-Rendering mit einer Bildserie, die den visuellen Entwicklungsprozess zeigt.",
+    "category": "Visualisierung",
+    "label": "Visualisierung",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/leica_013.jpg",
+    "alt": "Photoshop-Rendering einer Leica M8"
+  },
+  {
+    "slug": "pipeline",
+    "title": "Pipeline",
+    "description": "Ein erweiterbares Tischsystem im Format 60 × 60 cm aus sechs Standardelementen und verschraubten Leitungsrohren.",
+    "category": "Möbelsystem",
+    "label": "Bachelor · Möbelsystem",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/table_single.jpg",
+    "alt": "Pipeline, ein modulares Tischsystem aus Standardteilen und Leitungsrohren"
+  },
+  {
+    "slug": "viadi",
+    "title": "Viadi",
+    "description": "Ein leichter Elektrorollstuhl, der sich durch einen Klappmechanismus an unterschiedliche Situationen und Bewegungsräume anpassen lässt.",
+    "category": "Mobilität",
+    "label": "Bachelor · Mobilität",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_01.jpg",
+    "alt": "Viadi, ein leichter faltbarer Elektrorollstuhl"
+  },
+  {
+    "slug": "vita",
+    "title": "Vita",
+    "description": "Eine Armlehne, die Anrufe und Nachrichten über Wärme, Kälte und unterschiedliche Vibrationsmuster vermittelt, ohne den Blick von der Strasse abzulenken.",
+    "category": "Interaction Design",
+    "label": "Teamprojekt · Interaction Design",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/vita.jpg",
+    "alt": "Vita, ein Interaktionskonzept für eine warnende Armlehne im Auto"
+  },
+  {
+    "slug": "tv",
+    "title": "Pipeline Extension",
+    "description": "Ein TV-Möbel als Weiterentwicklung des modularen Pipeline-Systems.",
+    "category": "Möbel",
+    "label": "Eigenprojekt · Möbel",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv.jpg",
+    "alt": "TV-Möbel als Erweiterung des modularen Pipeline-Systems"
+  },
+  {
+    "slug": "tiles",
+    "title": "Akustik-Dämmelemente",
+    "description": "Ein dekoratives Element, das Gestaltung und akustische Dämmung zusammenführt.",
+    "category": "Materialdesign",
+    "label": "Master · Material",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles1.jpg",
+    "alt": "Dekorative Akustik-Dämmelemente"
+  },
+  {
+    "slug": "dog-laser",
+    "title": "DOG · Laser-Edition",
+    "description": "Eine zweite DOG-Interpretation: gelasert, modular aufgebaut und wie ein Puzzle für unterwegs zusammengesetzt.",
+    "category": "Eigenprojekt",
+    "label": "Eigenprojekt · Spiel",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dogs2.jpg",
+    "alt": "Modulare, gelaserte Variante des DOG-Brettspiels"
+  },
+  {
+    "slug": "digital-portfolio",
+    "title": "Digitales Portfolio",
+    "description": "Ein frühes interaktives Portfolio-Experiment aus der Bachelorzeit. Die damalige Live-Demo basierte auf Flash und wird hier deshalb nicht eingebettet.",
+    "category": "Digitales Design",
+    "label": "Bachelor · Digital",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/portfolio.jpg",
+    "alt": "Titelbild des digitalen Portfolios aus der Bachelorzeit"
+  },
+  {
+    "slug": "chair",
+    "title": "Stuhlstudie",
+    "description": "Eine visuelle Entwurfsserie zu einem Sitzmöbel aus dem älteren Projektarchiv.",
+    "category": "Produktdesign",
+    "label": "Produktstudie",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_00.jpg",
+    "alt": "Stuhlstudie, dokumentiert in einer Bildserie"
+  }
+]
