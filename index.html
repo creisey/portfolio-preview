@@ -229,15 +229,21 @@ body.project-open #cv { display: none !important; }
   #cv h2 { font-size: 30pt; margin-bottom: 4mm; }
   #cv .cv-intro { font-size: 9.5pt; max-width: none; }
   #cv .cv-profile-line { gap: 3mm 7mm; margin: 4mm 0 6mm; padding: 3mm 0; color: #444; }
-  #cv .cv-columns { grid-template-columns: 1.3fr .9fr; gap: 7mm; }
-  #cv .cv-columns h3 { font-size: 14pt; margin-bottom: 4mm; }
-  #cv .cv-entry { grid-template-columns: 21mm minmax(0,1fr); gap: 3mm; padding-bottom: 2.5mm; margin-bottom: 2mm; }
-  #cv .cv-entry h4 { font-size: 9.5pt; }
-  #cv .cv-role { font-size: 8.5pt; }
-  #cv .cv-entry p, #cv .cv-skill-group p { font-size: 8pt; line-height: 1.3; color: #222 !important; }
-  #cv .cv-date { font-size: 8pt; }
-  #cv .cv-entry.cv-education { grid-template-columns: 17mm minmax(0,1fr); }
-  #cv .cv-source-note { font-size: 7.5pt !important; }\n  #cv .cv-pdf-preview { display: none !important; }\n  #cv .cv-source-note { margin-top: 4mm; }
+  #cv .cv-columns { display: block; }
+  #cv .cv-main { break-after: page; page-break-after: always; }
+  #cv .cv-aside { break-before: page; page-break-before: always; }
+  #cv .cv-columns h3 { font-size: 14pt; margin-bottom: 3mm; }
+  #cv .cv-main > h3 { margin-bottom: 3mm; }
+  #cv .cv-entry { grid-template-columns: 24mm minmax(0,1fr); gap: 3mm; padding-bottom: 1.6mm; margin-bottom: 1.2mm; break-inside: avoid; page-break-inside: avoid; }
+  #cv .cv-entry h4 { font-size: 9pt; margin-bottom: 2px; }
+  #cv .cv-role { font-size: 8pt; margin-bottom: 3px; }
+  #cv .cv-entry p, #cv .cv-skill-group p { font-size: 7.8pt; line-height: 1.22; color: #222 !important; }
+  #cv .cv-date { font-size: 7.7pt; }
+  #cv .cv-entry.cv-education { grid-template-columns: 19mm minmax(0,1fr); }
+  #cv .cv-skill-group { padding-bottom: 2mm; margin-bottom: 2mm; break-inside: avoid; page-break-inside: avoid; }
+  #cv .cv-aside > h3:not(:first-child) { break-after: avoid; page-break-after: avoid; margin-top: 5mm; }
+  #cv .cv-source-note { font-size: 7.5pt !important; margin-top: 4mm; }
+  #cv .cv-pdf-preview { display: none !important; }
   #cv a { color: #111 !important; }
 }
 
