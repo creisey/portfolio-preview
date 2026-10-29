@@ -44,6 +44,176 @@ content:
         label: Bildbeschreibung (Barrierefreiheit)
         type: string
         required: true
+  - name: homepage
+    label: Homepage
+    type: file
+    path: content/homepage.json
+    format: json
+    fields:
+      - name: heroEyebrow
+        label: Hero-Etikett
+        type: string
+        required: true
+      - name: heroTitleLine1
+        label: Titelzeile 1
+        type: string
+        required: true
+      - name: heroTitleLine2
+        label: Titelzeile 2
+        type: string
+        required: true
+      - name: heroTitleAccent
+        label: Akzentwort
+        type: string
+        required: true
+      - name: heroTitleLine4
+        label: Titelzeile 4
+        type: string
+        required: true
+      - name: heroManifestoStart
+        label: Leitsatz
+        type: text
+        required: true
+      - name: heroManifestoEmphasis
+        label: Leitsatz – Hervorhebung
+        type: string
+        required: true
+      - name: heroIntro
+        label: Einleitung
+        type: text
+        required: true
+      - name: heroPrimaryAction
+        label: Primärer Button
+        type: string
+        required: true
+      - name: heroSecondaryAction
+        label: Sekundärer Button
+        type: string
+        required: true
+      - name: heroNoteTitle
+        label: Randnotiz – Titel
+        type: string
+        required: true
+      - name: heroNoteBody
+        label: Randnotiz – Text
+        type: text
+        required: true
+      - name: heroPersonalNote
+        label: Persönliche Randnotiz
+        type: string
+        required: true
+      - name: projectsEyebrow
+        label: Projektbereich – Etikett
+        type: string
+        required: true
+      - name: projectsTitleLine1
+        label: Projektbereich – Titelzeile 1
+        type: string
+        required: true
+      - name: projectsTitleLine2
+        label: Projektbereich – Titelzeile 2
+        type: string
+        required: true
+      - name: projectsIntro
+        label: Projektbereich – Einleitung
+        type: text
+        required: true
+      - name: aboutEyebrow
+        label: Profil – Etikett
+        type: string
+        required: true
+      - name: aboutTitleLine1
+        label: Profil – Titelzeile 1
+        type: string
+        required: true
+      - name: aboutTitleLine2
+        label: Profil – Titelzeile 2
+        type: string
+        required: true
+      - name: aboutTitleLine3
+        label: Profil – Titelzeile 3
+        type: string
+        required: true
+      - name: aboutLead
+        label: Profil – Kernaussage
+        type: text
+        required: true
+      - name: aboutParagraph1
+        label: Profil – Absatz 1
+        type: text
+        required: true
+      - name: aboutParagraph2
+        label: Profil – Absatz 2
+        type: text
+        required: true
+      - name: skill1Title
+        label: Kompetenz 1 – Titel
+        type: string
+        required: true
+      - name: skill1Description
+        label: Kompetenz 1 – Beschreibung
+        type: string
+        required: true
+      - name: skill2Title
+        label: Kompetenz 2 – Titel
+        type: string
+        required: true
+      - name: skill2Description
+        label: Kompetenz 2 – Beschreibung
+        type: string
+        required: true
+      - name: skill3Title
+        label: Kompetenz 3 – Titel
+        type: string
+        required: true
+      - name: skill3Description
+        label: Kompetenz 3 – Beschreibung
+        type: string
+        required: true
+      - name: skill4Title
+        label: Kompetenz 4 – Titel
+        type: string
+        required: true
+      - name: skill4Description
+        label: Kompetenz 4 – Beschreibung
+        type: string
+        required: true
+      - name: cvEyebrow
+        label: Lebenslauf – Etikett
+        type: string
+        required: true
+      - name: cvTitle
+        label: Lebenslauf – Titel
+        type: string
+        required: true
+      - name: cvIntro
+        label: Lebenslauf – Einleitung
+        type: text
+        required: true
+      - name: contactEyebrow
+        label: Kontakt – Etikett
+        type: string
+        required: true
+      - name: contactTitleLine1
+        label: Kontakt – Titelzeile 1
+        type: string
+        required: true
+      - name: contactTitleLine2
+        label: Kontakt – Titelzeile 2
+        type: string
+        required: true
+      - name: contactIntro
+        label: Kontakt – Text
+        type: text
+        required: true
+      - name: contactPrimaryAction
+        label: Kontakt – Hauptbutton
+        type: string
+        required: true
+      - name: contactSecondaryAction
+        label: Kontakt – zweiter Button
+        type: string
+        required: true
   - name: website
     label: Website und Dokumentation
     type: group

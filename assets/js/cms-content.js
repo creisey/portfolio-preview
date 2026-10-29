@@ -66,4 +66,18 @@
       });
     })
     .catch((error) => console.error("Portfolio CMS:", error));
+
+  fetch("content/homepage.json")
+    .then((response) => {
+      if (!response.ok) throw new Error("Homepage-Inhalte konnten nicht geladen werden.");
+      return response.json();
+    })
+    .then((content) => {
+      if (!content || typeof content !== "object" || Array.isArray(content)) throw new Error("Homepage-Inhalte haben ein ungültiges Format.");
+      document.querySelectorAll("[data-cms-home]").forEach((element) => {
+        const key = element.getAttribute("data-cms-home");
+        if (Object.prototype.hasOwnProperty.call(content, key) && typeof content[key] === "string") element.textContent = content[key];
+      });
+    })
+    .catch((error) => console.error("Portfolio CMS Homepage:", error));
 })();
