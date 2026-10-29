@@ -284,7 +284,13 @@
       },
       {
         "heading": "Ansatz",
-        "body": "Aus Origami-Experimenten entstand die Idee, ein flächiges Material durch gezielte Faltungen in eine stabile dreidimensionale Form zu bringen. Mit Planenmaterial und einer Sattlernähmaschine wurde ein tragbarer Korb entwickelt."
+        "body": "Aus Origami-Experimenten entstand die Idee, ein flächiges Material durch gezielte Faltungen in eine stabile dreidimensionale Form zu bringen. Mit Planenmaterial und einer Sattlernähmaschine wurde ein tragbarer Korb entwickelt.",
+        "imageAfter": {
+          "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_2.jpg",
+          "alt": "Cesta, Detailansicht",
+          "caption": "Form und Aufbau",
+          "className": "cesta-portrait-image"
+        }
       }
     ],
     "gallery": [
@@ -292,11 +298,6 @@
         "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_1.jpg",
         "alt": "Cesta, Gesamtansicht",
         "caption": "Produktkonzept"
-      },
-      {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_2.jpg",
-        "alt": "Cesta, Detailansicht",
-        "caption": "Form und Aufbau"
       },
       {
         "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_4.jpg",
