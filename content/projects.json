@@ -6,7 +6,75 @@
     "category": "Service Design",
     "label": "Masterarbeit · Service Design",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bewegen-mit-umdenken.jpg",
-    "alt": "Konzept für nachhaltige urbane Mobilität"
+    "alt": "Konzept für nachhaltige urbane Mobilität",
+    "detailEyebrow": "Masterarbeit · Service Design & Verhaltensänderung",
+    "detailLead": "Wie gestaltet man Veränderung so, dass Menschen sie nicht nur hinnehmen, sondern verstehen und selbst mittragen?",
+    "detailSections": [
+      {
+        "heading": "Ausgangslage",
+        "body": "Für rund 1'300 Mitarbeitende der geplanten zentralen Kantonsverwaltung in Emmen waren 80 Parkplätze vorgesehen. Die neue Mobilitätsrealität sollte vorbereitet werden – doch die Bedürfnisse der Mitarbeitenden waren in der bisherigen Planung zu wenig berücksichtigt."
+      },
+      {
+        "heading": "Mein Ansatz",
+        "body": "Aus Literaturrecherche, Experteninterviews und der Analyse bestehender Interventionen entstand ein Drei-Phasen-Modell. Es visualisiert, wie unterschiedliche Massnahmen Verhalten beeinflussen, wo sie sich überschneiden und wie sich eine Intervention über die Zeit verändert."
+      },
+      {
+        "heading": "Regeln und Grenzen",
+        "body": "DREI HEBEL FÜR VERÄNDERUNG INTERVENTION Massnahmen kombinieren FREIWILLIG Erkenntnis · Lernen FORCIERT Regeln · Grenzen ANGESTOSSEN Anreize · Nudging Die Pole sind gleichwertig und können sich überschneiden. Neu gezeichnet nach dem Drei-Phasen-Modell aus der Masterarbeit (2020). Die Grafik fasst die Logik vereinfacht zusammen; sie ist keine Originalabbildung. 01 · Forciert Verbindliche Vorgaben wie begrenzte Parkplätze oder ein Fahrtenkontingent."
+      },
+      {
+        "heading": "Anreize und Alternativen",
+        "body": "Zum Beispiel finanzielle ÖV-Anreize, gute Veloparkplätze, Homeoffice oder externe Arbeitsplätze."
+      },
+      {
+        "heading": "Verstehen und selbst entscheiden",
+        "body": "Bedürfnisse einbeziehen, Möglichkeiten erlebbar machen und mit authentischen Erfolgsgeschichten zur eigenen Erkenntnis beitragen."
+      },
+      {
+        "heading": "",
+        "body": "Regeln allein reichen selten aus. Werden sie mit nachvollziehbarer Kommunikation, passenden Alternativen und der Beteiligung der Betroffenen verbunden, kann Veränderung verständlicher und akzeptabler werden."
+      },
+      {
+        "heading": "Wofür das Modell gedacht ist",
+        "body": "Es hilft, Interventionen zu planen, ihre Schwerpunkte sichtbar zu machen und fehlende Massnahmen zu erkennen. Die drei Bereiche sind keine starre Abfolge; sie können sich überlagern und im Verlauf unterschiedlich gewichtet werden."
+      },
+      {
+        "heading": "Vorgehen",
+        "body": "Die Arbeit verbindet Literaturrecherche zu Mobilitätsmanagement, Design und Verhaltensänderung mit der Analyse von drei Fallbeispielen – Schweizer Drogenpolitik, Kaugummiverbot in Singapur und Corona-Massnahmen in der Schweiz bis 2020 – sowie Gesprächen mit Fachexperten."
+      },
+      {
+        "heading": "Geplante praktische Umsetzung",
+        "body": "Vorgesehen war, mit Mitarbeitenden alternative Pendelwege zu testen und ihre Erfahrungen als Erfolgsgeschichten aufzubereiten. Das ist in der Arbeit als geplante Umsetzung beschrieben, nicht als bereits nachgewiesener Projekterfolg."
+      },
+      {
+        "heading": "",
+        "body": "Der ursprüngliche Onlinebeitrag ist nicht mehr auf der Website verfügbar. Die archivierte Fassung vom 21. Januar 2025 ist weiterhin über die Wayback Machine lesbar."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bewegen-mit-umdenken.jpg",
+        "alt": "Projektbild der Masterarbeit Bewegen mit Umdenken",
+        "caption": "Bewegen mit Umdenken · Masterarbeit"
+      }
+    ],
+    "resources": [
+      {
+        "url": "https://creisey.github.io/portfolio-preview/assets/documents/bewegen-mit-umdenken.pdf",
+        "label": "Masterarbeit direkt öffnen ↗"
+      },
+      {
+        "url": "https://creisey.github.io/portfolio-preview/assets/documents/bewegen-mit-umdenken.pdf",
+        "label": "PDF herunterladen ↓"
+      },
+      {
+        "url": "https://creisey.github.io/portfolio-preview/assets/documents/bewegen-mit-umdenken.pdf",
+        "label": "Masterarbeit direkt öffnen ↗"
+      }
+    ],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": "<figure class=\"model-visual\" aria-labelledby=\"model-caption\">\n  <svg viewBox=\"0 0 800 470\" role=\"img\" aria-labelledby=\"model-title model-desc\" xmlns=\"http://www.w3.org/2000/svg\">\n    <title id=\"model-title\">Drei-Phasen-Modell der Verhaltensänderung</title>\n    <desc id=\"model-desc\">Ein Dreieck ordnet Verhaltensinterventionen zwischen forcierten Vorgaben, angestossenen Entscheidungen und freiwilliger Erkenntnis ein. Die Bereiche überlappen und können kombiniert werden.</desc>\n    <defs>\n      <linearGradient id=\"model-field\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n        <stop offset=\"0%\" stop-color=\"#d9008f\" stop-opacity=\".20\"/>\n        <stop offset=\"52%\" stop-color=\"#00c8e8\" stop-opacity=\".16\"/>\n        <stop offset=\"100%\" stop-color=\"#41944a\" stop-opacity=\".20\"/>\n      </linearGradient>\n      <clipPath id=\"model-triangle-clip\"><polygon points=\"400,78 150,365 650,365\"/></clipPath>\n    </defs>\n    <text x=\"400\" y=\"24\" text-anchor=\"middle\" font-size=\"13\" letter-spacing=\"2.4\" font-weight=\"700\" fill=\"var(--muted)\">DREI HEBEL FÜR VERÄNDERUNG</text>\n    <polygon points=\"400,78 150,365 650,365\" fill=\"url(#model-field)\" stroke=\"var(--site-on-background)\" stroke-width=\"2\"/>\n    <g clip-path=\"url(#model-triangle-clip)\">\n      <circle cx=\"400\" cy=\"145\" r=\"130\" fill=\"#d9008f\" opacity=\".12\"/>\n      <circle cx=\"235\" cy=\"315\" r=\"130\" fill=\"#00c8e8\" opacity=\".14\"/>\n      <circle cx=\"565\" cy=\"315\" r=\"130\" fill=\"#41944a\" opacity=\".12\"/>\n    </g>\n    <path d=\"M400 78 L400 365 M150 365 L525 221 M650 365 L275 221\" fill=\"none\" stroke=\"var(--site-on-background)\" stroke-opacity=\".16\" stroke-width=\"1.5\" stroke-dasharray=\"4 7\"/>\n    <rect x=\"302\" y=\"233\" width=\"196\" height=\"66\" rx=\"0\" fill=\"var(--site-background)\" stroke=\"var(--site-on-background)\" stroke-width=\"1.5\"/>\n    <text x=\"400\" y=\"260\" text-anchor=\"middle\" font-size=\"13\" letter-spacing=\"1.5\" font-weight=\"800\" fill=\"var(--site-on-background)\">INTERVENTION</text>\n    <text x=\"400\" y=\"281\" text-anchor=\"middle\" font-size=\"12\" fill=\"var(--muted)\">Massnahmen kombinieren</text>\n    <circle cx=\"400\" cy=\"78\" r=\"7\" fill=\"#d9008f\" stroke=\"var(--site-background)\" stroke-width=\"2\"/>\n    <circle cx=\"150\" cy=\"365\" r=\"7\" fill=\"#00a9c7\" stroke=\"var(--site-background)\" stroke-width=\"2\"/>\n    <circle cx=\"650\" cy=\"365\" r=\"7\" fill=\"#41944a\" stroke=\"var(--site-background)\" stroke-width=\"2\"/>\n    <g fill=\"var(--site-on-background)\" font-family=\"Inter, Arial, sans-serif\">\n      <text x=\"400\" y=\"48\" text-anchor=\"middle\" font-size=\"20\" font-weight=\"800\">FREIWILLIG</text>\n      <text x=\"400\" y=\"65\" text-anchor=\"middle\" font-size=\"12\">Erkenntnis · Lernen</text>\n      <text x=\"150\" y=\"405\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\">FORCIERT</text>\n      <text x=\"150\" y=\"425\" text-anchor=\"middle\" font-size=\"12\">Regeln · Grenzen</text>\n      <text x=\"650\" y=\"405\" text-anchor=\"middle\" font-size=\"19\" font-weight=\"800\">ANGESTOSSEN</text>\n      <text x=\"650\" y=\"425\" text-anchor=\"middle\" font-size=\"12\">Anreize · Nudging</text>\n    </g>\n    <text x=\"400\" y=\"458\" text-anchor=\"middle\" font-size=\"11\" fill=\"var(--muted)\">Die Pole sind gleichwertig und können sich überschneiden.</text>\n  </svg>\n  <figcaption id=\"model-caption\">Neu gezeichnet nach dem Drei-Phasen-Modell aus der Masterarbeit (2020). Die Grafik fasst die Logik vereinfacht zusammen; sie ist keine Originalabbildung.</figcaption>\n</figure>\n<div class=\"reference-note\"><div class=\"detail-meta\">Originalveröffentlichung</div><strong>Bewegen mit Umdenken · Luzern Nord</strong><p>Der ursprüngliche Onlinebeitrag ist nicht mehr auf der Website verfügbar. Die archivierte Fassung vom 21. Januar 2025 ist weiterhin über die Wayback Machine lesbar.</p><p><a href=\"https://web.archive.org/web/20250121193649/luzernnord.ch/smart-city/bewegen-mit-umdenken\" target=\"_blank\" rel=\"noopener noreferrer\">Artikel im Webarchiv lesen ↗</a></p></div>"
   },
   {
     "slug": "epsilon",
@@ -15,7 +83,49 @@
     "category": "Industrie",
     "label": "Industrie",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine03.jpg",
-    "alt": "Konstruktionskonzept einer Industrienähmaschine"
+    "alt": "Konstruktionskonzept einer Industrienähmaschine",
+    "detailEyebrow": "Industrie · Produktentwicklung",
+    "detailLead": "",
+    "detailSections": [
+      {
+        "heading": "Ausgangslage",
+        "body": "Industrienähmaschinen sind technisch komplex und können einen hohen Wartungsaufwand verursachen."
+      },
+      {
+        "heading": "Konzept",
+        "body": "Der Einsatz von Linearmotoren soll auf ein komplexes Getriebe verzichten. Das ermöglicht eine leichtere Gehäusegestaltung und grosszügigeren Arbeitsraum. Beleuchtung und Bedienung wurden an den Bedürfnissen der Anwender orientiert."
+      },
+      {
+        "heading": "Umsetzung",
+        "body": "Zum Projekt gehören die Gestaltung des Maschinenkonzepts, ein digitales Interface für die Bedienung sowie 3D-Modelle zur Untersuchung der Konstruktion."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine00.jpg",
+        "alt": "Ansicht des Epsilon Maschinenkonzepts",
+        "caption": "Produktkonzept"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine03.jpg",
+        "alt": "Detail des Maschinenentwurfs Epsilon",
+        "caption": "Form und Konstruktion"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine01.jpg",
+        "alt": "Weitere Ansicht der Industrienähmaschine",
+        "caption": "Entwurfsansicht"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine04.jpg",
+        "alt": "Weitere Darstellung des Epsilon Projekts",
+        "caption": "Projektvisualisierung"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "bad",
@@ -24,7 +134,49 @@
     "category": "Eigenprojekt",
     "label": "Eigenprojekt",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank5.jpg",
-    "alt": "Sitzbank aus Fichtenholz im Badezimmer"
+    "alt": "Sitzbank aus Fichtenholz im Badezimmer",
+    "detailEyebrow": "Eigenprojekt · Möbelbau",
+    "detailLead": "",
+    "detailSections": [
+      {
+        "heading": "Idee",
+        "body": "Eine schlichte Sitzbank aus Fichtenholz, passend zur Nutzung im Badezimmer."
+      },
+      {
+        "heading": "Konstruktion und Material",
+        "body": "Vier CNC-gefräste Elemente bilden eine reduzierte Konstruktion. Material, Proportionen und Verbindung sind so aufeinander abgestimmt, dass die Bank mit wenigen Teilen auskommt."
+      },
+      {
+        "heading": "Fokus",
+        "body": "Digitale Fertigung mit einer klaren Form und einer einfachen Montage verbinden."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank2.jpg",
+        "alt": "Frühe Ansicht der Badezimmerbank",
+        "caption": "Entwurf und Form"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank5.jpg",
+        "alt": "Badezimmerbank aus Fichtenholz",
+        "caption": "Umgesetztes Möbel"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank6.jpg",
+        "alt": "Detail der Sitzbank",
+        "caption": "Material und Detail"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank7.jpg",
+        "alt": "Weitere Ansicht der Badezimmerbank",
+        "caption": "Ansicht im Raum"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "hund",
@@ -33,7 +185,35 @@
     "category": "Produktdesign",
     "label": "Produktdesign",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/hund1.jpg",
-    "alt": "Handgefertigter Ziehhund aus Holz"
+    "alt": "Handgefertigter Ziehhund aus Holz",
+    "detailEyebrow": "Produktdesign · Holz",
+    "detailLead": "",
+    "detailSections": [
+      {
+        "heading": "Idee",
+        "body": "Ein kleines Ziehspielzeug, das durch seine Form und die Bewegung der Räder zum Spielen einlädt."
+      },
+      {
+        "heading": "Material und Gestaltung",
+        "body": "Der Körper aus Fichtenholz wird mit einfachen Rädern und einer Kordel ergänzt. Die Gestaltung konzentriert sich auf eine verständliche Silhouette, robuste Details und eine angenehme Haptik."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/hund1.jpg",
+        "alt": "Handgefertigter Ziehhund aus Holz",
+        "caption": "Spielzeug aus Holz"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/hund2.jpg",
+        "alt": "Weitere Ansicht des Holzspielzeugs",
+        "caption": "Form und Details"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "sekretaer",
@@ -42,7 +222,49 @@
     "category": "Möbel",
     "label": "Möbel",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer1.jpg",
-    "alt": "Erweiterung des IKEA MICKE Sekretärs aus Holz"
+    "alt": "Erweiterung des IKEA MICKE Sekretärs aus Holz",
+    "detailEyebrow": "Eigenprojekt · Möbel",
+    "detailLead": "",
+    "detailSections": [
+      {
+        "heading": "Ausgangslage",
+        "body": "Der bestehende IKEA MICKE Sekretär sollte mit zusätzlichem Stauraum und einer hochwertigeren Materialwirkung erweitert werden."
+      },
+      {
+        "heading": "Lösung",
+        "body": "Geölte Eiche und Steckverbindungen ergänzen das vorhandene Möbel. Die Verbindungselemente übernehmen eine konstruktive Funktion und werden zugleich Teil des sichtbaren Designs."
+      },
+      {
+        "heading": "Fokus",
+        "body": "Ein bestehendes Produkt weiterdenken, statt es vollständig zu ersetzen."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer0.jpg",
+        "alt": "Ausgangsmöbel für die Sekretär-Erweiterung",
+        "caption": "Ausgangslage"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer1.jpg",
+        "alt": "Erweiterung des Sekretärs aus Holz",
+        "caption": "Erweiterung"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer2.jpg",
+        "alt": "Detail der Sekretär-Erweiterung",
+        "caption": "Konstruktionsdetail"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer4.jpg",
+        "alt": "Weitere Ansicht der Möbel-Erweiterung",
+        "caption": "Im Einsatz"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "dog",
@@ -51,7 +273,40 @@
     "category": "Eigenprojekt",
     "label": "Eigenprojekt",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dog0.jpg",
-    "alt": "Selbst gestaltetes DOG Brettspiel aus Holz"
+    "alt": "Selbst gestaltetes DOG Brettspiel aus Holz",
+    "detailEyebrow": "Eigenprojekt · Spiel",
+    "detailLead": "",
+    "detailSections": [
+      {
+        "heading": "Idee",
+        "body": "Eine eigene Interpretation des bekannten DOG-Brettspiels, gefräst aus Bambus."
+      },
+      {
+        "heading": "Umsetzung",
+        "body": "Material und Fräsbearbeitung geben dem Spielbrett seine klare, robuste Anmutung. Das Projekt verbindet die Freude am Spielen mit dem Entwickeln und Herstellen eines langlebigen Gegenstands."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dog0.jpg",
+        "alt": "DOG Brettspiel aus Bambus",
+        "caption": "Spielbrett"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dog1.jpg",
+        "alt": "Detailansicht des DOG Spiels",
+        "caption": "Material und Fräsung"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dog3.jpg",
+        "alt": "Weitere Ansicht des DOG Spiels",
+        "caption": "Spiel im Detail"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "cesta",
@@ -60,7 +315,50 @@
     "category": "Produktdesign",
     "label": "Bachelor · Produktdesign",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_1.jpg",
-    "alt": "Cesta, ein faltbarer Wäschekorb zum Tragen auf dem Rücken"
+    "alt": "Cesta, ein faltbarer Wäschekorb zum Tragen auf dem Rücken",
+    "detailEyebrow": "Bachelor · Produktdesign",
+    "detailLead": "Ein Wäschekorb, der sich dem Alltag anpasst – und auf dem Rücken getragen werden kann.",
+    "detailSections": [
+      {
+        "heading": "Ausgangslage",
+        "body": "Ein voller Wäschekorb ist auf dem Weg zwischen Wohnung und Waschküche unhandlich, besonders wenn er mit nasser Wäsche schwer wird."
+      },
+      {
+        "heading": "Ansatz",
+        "body": "Aus Origami-Experimenten entstand die Idee, ein flächiges Material durch gezielte Faltungen in eine stabile dreidimensionale Form zu bringen. Mit Planenmaterial und einer Sattlernähmaschine wurde ein tragbarer Korb entwickelt."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_1.jpg",
+        "alt": "Cesta, Gesamtansicht",
+        "caption": "Produktkonzept"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_2.jpg",
+        "alt": "Cesta, Detailansicht",
+        "caption": "Form und Aufbau"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_4.jpg",
+        "alt": "Faltstruktur des Materials",
+        "caption": "Faltstruktur"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_5.jpg",
+        "alt": "Cesta in der Anwendung",
+        "caption": "Anwendung"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_6.jpg",
+        "alt": "Fertigung von Cesta",
+        "caption": "Umsetzung"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "car",
@@ -69,7 +367,61 @@
     "category": "Mobilität",
     "label": "Bachelor · Mobilität",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/car_side.jpg",
-    "alt": "Car Utopia, Konzept für autonome urbane Mobilität"
+    "alt": "Car Utopia, Konzept für autonome urbane Mobilität",
+    "detailEyebrow": "Bachelor · Zukunftsmobilität",
+    "detailLead": "Ein Mobilitätssystem, das die Flexibilität des Autos mit der Effizienz eines vernetzten Verkehrssystems verbinden soll.",
+    "detailSections": [
+      {
+        "heading": "Konzept",
+        "body": "Für den Nahverkehr sind autonome Zweiplätzer vorgesehen. Auf längeren Strecken werden die kleinen Kapseln in ein Ferntransfersystem überführt und als Gondel weitertransportiert."
+      },
+      {
+        "heading": "Gestalterische Kriterien",
+        "body": "Das Konzept verbindet Agilität, Vertrautheit, einen retrofuturistischen Charakter, Einfachheit, Sicherheit und Stabilität."
+      },
+      {
+        "heading": "",
+        "body": "Der Entwurf denkt Fahrzeug, Infrastruktur und Reiseablauf als zusammenhängendes Mobilitätserlebnis."
+      },
+      {
+        "heading": "",
+        "body": "Die Originalanimationen zeigen das Fahrzeug im Strassenraum, den Gondeltransfer und eine zusätzliche Bewegungsstudie."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/car_front.jpg",
+        "alt": "Car Utopia, Frontansicht",
+        "caption": "Fahrzeugkonzept"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/car_side.jpg",
+        "alt": "Car Utopia, Seitenansicht",
+        "caption": "Proportionen"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/car_back.jpg",
+        "alt": "Car Utopia, Heckansicht",
+        "caption": "Detailansicht"
+      }
+    ],
+    "resources": [
+      {
+        "url": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/video/kreuzung_BIGER.mp4",
+        "label": "Film 1 separat öffnen ↗"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/video/gondel-schritt.mp4",
+        "label": "Film 2 separat öffnen ↗"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/video/_car_in_8_.mp4",
+        "label": "Film 3 separat öffnen ↗"
+      }
+    ],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "clayon",
@@ -78,7 +430,65 @@
     "category": "Produktdesign",
     "label": "Bachelor · Produktentwicklung",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_1.jpg",
-    "alt": "Clayon, ein leichtes Schlafsystem mit integrierter Federung"
+    "alt": "Clayon, ein leichtes Schlafsystem mit integrierter Federung",
+    "detailEyebrow": "Bachelor · Produktentwicklung",
+    "detailLead": "Ein leichtes Schlafsystem mit integrierter Federung und individuell anpassbaren Auflagezonen.",
+    "detailSections": [
+      {
+        "heading": "Ansatz",
+        "body": "Die Federfunktion wird in das tragende Matratzenauflagesystem integriert. Ein Geflecht aus Gummi kombiniert mit einem bestehenden Federungskonzept soll dünne Matratzen ermöglichen."
+      },
+      {
+        "heading": "Gestalterische Ziele",
+        "body": "Weniger Materialverbrauch, gute Belüftung, geringes Gewicht und punktuelle Federung. Das puristische Holzgestell gibt dem System eine klare Form."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_1.jpg",
+        "alt": "Clayon, Produktkonzept",
+        "caption": "Gesamtkonzept"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_2.jpg",
+        "alt": "Clayon, Detailansicht",
+        "caption": "Aufbau"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_3.jpg",
+        "alt": "Clayon, Konstruktion",
+        "caption": "Konstruktion"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_4.jpg",
+        "alt": "Clayon, Materialdetail",
+        "caption": "Material"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_5.jpg",
+        "alt": "Clayon, Seitenansicht",
+        "caption": "Seitenansicht"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_6.jpg",
+        "alt": "Clayon, weitere Konstruktionsansicht",
+        "caption": "Federung"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_7.jpg",
+        "alt": "Clayon, weitere Darstellung",
+        "caption": "Entwurf"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_8.jpg",
+        "alt": "Clayon, letzte Konzeptansicht",
+        "caption": "Visualisierung"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "teapot",
@@ -87,7 +497,55 @@
     "category": "Produktdesign",
     "label": "Bachelor · Produktdesign",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot05.jpg",
-    "alt": "Teekannen-Konzept aus einer Bachelorarbeit"
+    "alt": "Teekannen-Konzept aus einer Bachelorarbeit",
+    "detailEyebrow": "Bachelor · Produktdesign",
+    "detailLead": "Ein Produktkonzept, das die Zubereitung von Tee und die Kontrolle der Ziehzeit in den Mittelpunkt stellt.",
+    "detailSections": [
+      {
+        "heading": "Ausgangspunkt",
+        "body": "Beim Tee entscheidet die Ziehzeit über das Aroma. Wird der Beutel oder das Teeei zu spät aus dem Wasser genommen, kann der Tee bitter werden."
+      },
+      {
+        "heading": "Gestalterischer Fokus",
+        "body": "Die Arbeit untersucht die Funktion und Form rund um diesen alltäglichen Zubereitungsschritt. Die erhaltene Dokumentation zeigt die Entwicklung in mehreren Produktansichten."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot00.jpg",
+        "alt": "Teekannen-Konzept, erste Ansicht",
+        "caption": "Konzept"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot01.jpg",
+        "alt": "Teekannen-Konzept, Form",
+        "caption": "Formstudie"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot02.jpg",
+        "alt": "Teekannen-Konzept, Detail",
+        "caption": "Detail"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot03.jpg",
+        "alt": "Teekannen-Konzept, Konstruktion",
+        "caption": "Konstruktion"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot04.jpg",
+        "alt": "Teekannen-Konzept, Produktansicht",
+        "caption": "Produktansicht"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot05.jpg",
+        "alt": "Teekannen-Konzept, finale Ansicht",
+        "caption": "Finale Darstellung"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "leica",
@@ -96,7 +554,41 @@
     "category": "Visualisierung",
     "label": "Visualisierung",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/leica_013.jpg",
-    "alt": "Photoshop-Rendering einer Leica M8"
+    "alt": "Photoshop-Rendering einer Leica M8",
+    "detailEyebrow": "Bachelor · Visualisierung",
+    "detailLead": "Eine digitale Produktvisualisierung mit dokumentiertem Bildprozess.",
+    "detailSections": [
+      {
+        "heading": "",
+        "body": "Die Bildserie zeigt das Rendering und die Entwicklungsschritte in Photoshop. Im Fokus stehen Form, Materialwirkung, Licht und die schrittweise Ausarbeitung der Darstellung."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/evolution0000.jpg",
+        "alt": "Erster Schritt im Renderingprozess",
+        "caption": "Prozess 01"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/evolution0002.jpg",
+        "alt": "Weiterer Schritt im Renderingprozess",
+        "caption": "Prozess 02"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/evolution0004.jpg",
+        "alt": "Zwischenstand des Renderings",
+        "caption": "Prozess 03"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/evolution0006.jpg",
+        "alt": "Später Stand des Renderings",
+        "caption": "Prozess 04"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "pipeline",
@@ -105,7 +597,50 @@
     "category": "Möbelsystem",
     "label": "Bachelor · Möbelsystem",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/table_single.jpg",
-    "alt": "Pipeline, ein modulares Tischsystem aus Standardteilen und Leitungsrohren"
+    "alt": "Pipeline, ein modulares Tischsystem aus Standardteilen und Leitungsrohren",
+    "detailEyebrow": "Bachelor · Möbelsystem",
+    "detailLead": "Ein modulares Tischsystem im Format 60 × 60 cm aus sechs Standardteilen und verschraubten Leitungsrohren.",
+    "detailSections": [
+      {
+        "heading": "Konstruktion",
+        "body": "Die Trägerstruktur besteht aus miteinander verschraubten Leitungsrohren. Mit einem eigenen Verbindungselement lässt sich das Tischsystem individuell erweitern."
+      },
+      {
+        "heading": "Gestalterischer Fokus",
+        "body": "Standardteile werden zu einem flexiblen System kombiniert, dessen Konstruktion sichtbar bleibt."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/table_single.jpg",
+        "alt": "Pipeline, Tischsystem",
+        "caption": "Tischsystem"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/pipeline_01.jpg",
+        "alt": "Pipeline, Struktur",
+        "caption": "Struktur"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/pipeline_02.jpg",
+        "alt": "Pipeline, Verbindungselement",
+        "caption": "Verbindungselement"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/pipeline_03.jpg",
+        "alt": "Pipeline, Detail",
+        "caption": "Detail"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/pipeline_05.jpg",
+        "alt": "Pipeline, weitere Ansicht",
+        "caption": "Erweiterung"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "viadi",
@@ -114,7 +649,60 @@
     "category": "Mobilität",
     "label": "Bachelor · Mobilität",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_01.jpg",
-    "alt": "Viadi, ein leichter faltbarer Elektrorollstuhl"
+    "alt": "Viadi, ein leichter faltbarer Elektrorollstuhl",
+    "detailEyebrow": "Bachelor · Mobilität & Assistive Design",
+    "detailLead": "Ein leichter Elektrorollstuhl, der sich mit einem einfachen Klappmechanismus an unterschiedliche Reisesituationen anpassen lässt.",
+    "detailSections": [
+      {
+        "heading": "Anpassungsfähigkeit",
+        "body": "Die Sitzposition lässt sich schmal und hoch für Bewegungsfreiheit oder Blickkontakt sowie tief und breit für schnelleres Fahren konfigurieren. In sich gefederte Loopwheels sorgen für Komfort."
+      },
+      {
+        "heading": "Integration",
+        "body": "Akkus, Steuerung und Beleuchtung sind in Untergestell, Armlehne und Schubgriff integriert."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_01.jpg",
+        "alt": "Viadi, erste Konzeptansicht",
+        "caption": "Konzept"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_02.jpg",
+        "alt": "Viadi, Seitenansicht",
+        "caption": "Seitenansicht"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_03.jpg",
+        "alt": "Viadi, Faltmechanismus",
+        "caption": "Faltmechanismus"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_04.jpg",
+        "alt": "Viadi, Sitzposition",
+        "caption": "Sitzposition"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_05.jpg",
+        "alt": "Viadi, Detailansicht",
+        "caption": "Detail"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_06.jpg",
+        "alt": "Viadi, finale Ansicht",
+        "caption": "Finale Darstellung"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_07.jpg",
+        "alt": "Viadi, weitere Konzeptansicht",
+        "caption": "Ansicht"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "vita",
@@ -123,7 +711,28 @@
     "category": "Interaction Design",
     "label": "Teamprojekt · Interaction Design",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/vita.jpg",
-    "alt": "Vita, ein Interaktionskonzept für eine warnende Armlehne im Auto"
+    "alt": "Vita, ein Interaktionskonzept für eine warnende Armlehne im Auto",
+    "detailEyebrow": "Internationale Zusammenarbeit · Continental Guadalajara, Mexiko",
+    "detailLead": "Informationen spürbar machen, ohne den Blick von der Strasse abzulenken.",
+    "detailSections": [
+      {
+        "heading": "Ausgangslage",
+        "body": "Smartphones helfen bei Orientierung und Kommunikation, können während der Fahrt aber auch ablenken. Das Projekt untersuchte, wie eingehende Anrufe und Nachrichten anders vermittelt werden können."
+      },
+      {
+        "heading": "Idee",
+        "body": "Eine ergonomische Armlehne informiert über Wärme, Kälte und verschiedene Vibrationsmuster. So sollen Meldungen wahrnehmbar werden, ohne dass der Fahrer das Display ansehen muss."
+      },
+      {
+        "heading": "Zusammenarbeit",
+        "body": "Das Team vereinte Kompetenzen aus Interaction Design, Mechatronik, Elektronik, Wirtschaft, Psychologie und Design."
+      }
+    ],
+    "gallery": [],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "tv",
@@ -132,7 +741,46 @@
     "category": "Möbel",
     "label": "Eigenprojekt · Möbel",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv.jpg",
-    "alt": "TV-Möbel als Erweiterung des modularen Pipeline-Systems"
+    "alt": "TV-Möbel als Erweiterung des modularen Pipeline-Systems",
+    "detailEyebrow": "Eigenprojekt · Möbel",
+    "detailLead": "Ein TV-Möbel als Erweiterung des modularen Pipeline-Systems.",
+    "detailSections": [
+      {
+        "heading": "",
+        "body": "Das Möbel führt das modulare Denken aus dem Pipeline-Tischsystem in einen neuen Anwendungsbereich weiter: ein eigenständiges TV-Möbel, das als Erweiterung der Systemidee gedacht ist."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv0.jpg",
+        "alt": "Pipeline Extension, erste Ansicht",
+        "caption": "Entwurf"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv1.jpg",
+        "alt": "Pipeline Extension, Seitenansicht",
+        "caption": "Proportionen"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv2.jpg",
+        "alt": "Pipeline Extension, Konstruktion",
+        "caption": "Konstruktion"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv3.jpg",
+        "alt": "Pipeline Extension, Detail",
+        "caption": "Detail"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv4.jpg",
+        "alt": "Pipeline Extension, finale Ansicht",
+        "caption": "Finale Ansicht"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "tiles",
@@ -141,7 +789,41 @@
     "category": "Materialdesign",
     "label": "Master · Material",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles1.jpg",
-    "alt": "Dekorative Akustik-Dämmelemente"
+    "alt": "Dekorative Akustik-Dämmelemente",
+    "detailEyebrow": "Master · Materialdesign",
+    "detailLead": "Ein dekoratives Dämmelement, das Oberflächengestaltung mit akustischer Funktion verbindet.",
+    "detailSections": [
+      {
+        "heading": "",
+        "body": "Das Projekt untersucht ein dekoratives Element mit akustischer Dämmung. Form und Anordnung sollen eine gestalterische Oberfläche schaffen, ohne die Funktion aus dem Blick zu verlieren."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles0.jpg",
+        "alt": "Akustik-Dämmelemente, erste Ansicht",
+        "caption": "Konzept"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles1.jpg",
+        "alt": "Akustik-Dämmelemente, Oberfläche",
+        "caption": "Oberfläche"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles2.jpg",
+        "alt": "Akustik-Dämmelemente, Anordnung",
+        "caption": "Anordnung"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles3.jpg",
+        "alt": "Akustik-Dämmelemente, Detail",
+        "caption": "Detail"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "dog-laser",
@@ -150,7 +832,36 @@
     "category": "Eigenprojekt",
     "label": "Eigenprojekt · Spiel",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dogs2.jpg",
-    "alt": "Modulare, gelaserte Variante des DOG-Brettspiels"
+    "alt": "Modulare, gelaserte Variante des DOG-Brettspiels",
+    "detailEyebrow": "Eigenprojekt · Spiel",
+    "detailLead": "Eine kompakte, modulare Interpretation des bekannten DOG-Brettspiels – gelasert und wie ein Puzzle aufgebaut.",
+    "detailSections": [
+      {
+        "heading": "",
+        "body": "Die gelaserte Variante setzt auf einen modularen Aufbau, der sich wie ein Puzzle zusammensetzen lässt. So wird das Spiel kompakt und praktisch für unterwegs. Sie ergänzt die separat gezeigte gefräste Bambus-Version."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dogs0.jpg",
+        "alt": "DOG Laser-Edition, Gesamtansicht",
+        "caption": "Spielbrett"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dogs1.jpg",
+        "alt": "DOG Laser-Edition, Detail",
+        "caption": "Details"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dogs2.jpg",
+        "alt": "DOG Laser-Edition, weitere Ansicht",
+        "caption": "Modularer Aufbau"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   },
   {
     "slug": "digital-portfolio",
@@ -159,7 +870,20 @@
     "category": "Digitales Design",
     "label": "Bachelor · Digital",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/portfolio.jpg",
-    "alt": "Titelbild des digitalen Portfolios aus der Bachelorzeit"
+    "alt": "Titelbild des digitalen Portfolios aus der Bachelorzeit",
+    "detailEyebrow": "Bachelor · Digitales Experiment",
+    "detailLead": "",
+    "detailSections": [],
+    "gallery": [],
+    "resources": [
+      {
+        "url": "https://i.josi.as/3",
+        "label": "Digitales Portfolio direkt öffnen ↗"
+      }
+    ],
+    "embedUrl": "https://i.josi.as/3",
+    "embedTitle": "Interaktives digitales Portfolio von Josias Marti",
+    "customHtml": ""
   },
   {
     "slug": "chair",
@@ -168,6 +892,45 @@
     "category": "Produktdesign",
     "label": "Produktstudie",
     "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_00.jpg",
-    "alt": "Stuhlstudie, dokumentiert in einer Bildserie"
+    "alt": "Stuhlstudie, dokumentiert in einer Bildserie",
+    "detailEyebrow": "Älteres Projektarchiv · Produktdesign",
+    "detailLead": "Eine visuelle Entwurfsserie zu einem Sitzmöbel aus dem älteren Projektarchiv.",
+    "detailSections": [
+      {
+        "heading": "",
+        "body": "Im ursprünglichen Archiv ist die Arbeit als Bildserie erhalten; eine ausführlichere Projektbeschreibung liegt dort nicht vor. Deshalb bleibt die Darstellung bewusst auf die Entwurfsansichten konzentriert."
+      }
+    ],
+    "gallery": [
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_00.jpg",
+        "alt": "Stuhlstudie, erste Ansicht",
+        "caption": "Ansicht 01"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_01.jpg",
+        "alt": "Stuhlstudie, zweite Ansicht",
+        "caption": "Ansicht 02"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_02.jpg",
+        "alt": "Stuhlstudie, dritte Ansicht",
+        "caption": "Ansicht 03"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_03.jpg",
+        "alt": "Stuhlstudie, vierte Ansicht",
+        "caption": "Ansicht 04"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_04.jpg",
+        "alt": "Stuhlstudie, fünfte Ansicht",
+        "caption": "Ansicht 05"
+      }
+    ],
+    "resources": [],
+    "embedUrl": "",
+    "embedTitle": "",
+    "customHtml": ""
   }
 ]
