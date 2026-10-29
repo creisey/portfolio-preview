@@ -110,6 +110,12 @@ content:
         options:
           language: html
         description: Spezialinhalte wie Diagramme und PDF-Vorschauen. HTML-Kenntnisse erforderlich.
+      - name: diagramHtml
+        label: Detailseite – Diagramm (HTML)
+        type: code
+        options:
+          language: html
+        description: Optionales Diagramm oder eine spezielle Grafik. HTML-Kenntnisse erforderlich.
   - name: homepage
     label: Homepage
     type: file
