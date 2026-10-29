@@ -18,7 +18,7 @@ Dieses Repository ist die alleinige Entwicklungsbasis für das neue Portfolio. �
 - Gewünschte Vorschau-Adresse: https://preview.josi.as
 - Workflow: `.github/workflows/pages.yml`
 
-Der Workflow veröffentlicht statische Dateien aus diesem Repository über GitHub Actions. Der letzte überprüfte Lauf vom 28. Oktober 2026 war erfolgreich.
+Der Workflow veröffentlicht statische Dateien aus diesem Repository über GitHub Actions. Den Status und das Ergebnis des jeweils neuesten Laufs zeigt die [GitHub-Actions-Übersicht](https://github.com/creisey/portfolio-preview/actions/workflows/pages.yml).
 
 Die Custom-Domain `preview.josi.as` muss in den GitHub-Pages-Einstellungen dieses Repositorys hinterlegt und beim DNS-Anbieter auf `creisey.github.io` verwiesen werden. Da die Veröffentlichung über einen eigenen GitHub-Actions-Workflow erfolgt, reicht eine `CNAME`-Datei im Repository allein nicht aus. Domain- und DNS-Konfiguration müssen separat geprüft werden.
 
