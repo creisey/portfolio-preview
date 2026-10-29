@@ -444,11 +444,11 @@
   {
     "slug": "teapot",
     "title": "Teekannen-Konzept",
-    "description": "Ein Teekannen-Konzept, das den richtigen Zeitpunkt zum Herausnehmen von Teebeutel oder Teeei ins Zentrum der Teezubereitung stellt.",
+    "description": "Eine Auseinandersetzung mit der Teezubereitung und dem richtigen Zeitpunkt, Teebeutel oder Teeei aus dem Wasser zu nehmen.",
     "category": "Produktdesign",
     "label": "Bachelor · Produktdesign",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot00.jpg",
-    "alt": "Teekannen-Konzept, erste Konzeptansicht",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot05.jpg",
+    "alt": "Teekannen-Konzept aus einer Bachelorarbeit",
     "detailEyebrow": "Bachelor · Produktdesign",
     "detailLead": "Wie lässt sich der richtige Moment zum Herausnehmen von Teebeutel oder Teeei in die Gestaltung der Teekanne integrieren?",
     "detailSections": [
@@ -462,11 +462,6 @@
       }
     ],
     "gallery": [
-      {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot00.jpg",
-        "alt": "Teekannen-Konzept, erste Ansicht",
-        "caption": "Konzept"
-      },
       {
         "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot01.jpg",
         "alt": "Teekannen-Konzept, Form",
@@ -491,6 +486,11 @@
         "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot05.jpg",
         "alt": "Teekannen-Konzept, finale Ansicht",
         "caption": "Finale Darstellung"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot00.jpg",
+        "alt": "Teekannen-Konzept, Darstellung der Bedienung und Anwendung",
+        "caption": "Bedienung und Anwendung"
       }
     ]
   },
