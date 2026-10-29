@@ -141,14 +141,14 @@
         "caption": "Entwurf und Form"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank5.jpg",
-        "alt": "Badezimmerbank aus Fichtenholz",
-        "caption": "Umgesetztes Möbel"
-      },
-      {
         "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank6.jpg",
         "alt": "Detail der Sitzbank",
         "caption": "Material und Detail"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank7.jpg",
+        "alt": "Weitere Ansicht der Badezimmerbank",
+        "caption": "Ansicht im Raum"
       }
     ]
   },
