@@ -149,11 +149,6 @@
         "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank6.jpg",
         "alt": "Detail der Sitzbank",
         "caption": "Material und Detail"
-      },
-      {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank7.jpg",
-        "alt": "Weitere Ansicht der Badezimmerbank",
-        "caption": "Ansicht im Raum"
       }
     ]
   },
@@ -232,11 +227,6 @@
         "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer2.jpg",
         "alt": "Detail der Sekretär-Erweiterung",
         "caption": "Konstruktionsdetail"
-      },
-      {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer4.jpg",
-        "alt": "Weitere Ansicht der Möbel-Erweiterung",
-        "caption": "Im Einsatz"
       }
     ]
   },
@@ -454,13 +444,13 @@
   {
     "slug": "teapot",
     "title": "Teekannen-Konzept",
-    "description": "Eine Auseinandersetzung mit der Teezubereitung und dem richtigen Zeitpunkt, Teebeutel oder Teeei aus dem Wasser zu nehmen.",
+    "description": "Ein Teekannen-Konzept, das den richtigen Zeitpunkt zum Herausnehmen von Teebeutel oder Teeei ins Zentrum der Teezubereitung stellt.",
     "category": "Produktdesign",
     "label": "Bachelor · Produktdesign",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot05.jpg",
-    "alt": "Teekannen-Konzept aus einer Bachelorarbeit",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot00.jpg",
+    "alt": "Teekannen-Konzept, erste Konzeptansicht",
     "detailEyebrow": "Bachelor · Produktdesign",
-    "detailLead": "Ein Produktkonzept, das die Zubereitung von Tee und die Kontrolle der Ziehzeit in den Mittelpunkt stellt.",
+    "detailLead": "Wie lässt sich der richtige Moment zum Herausnehmen von Teebeutel oder Teeei in die Gestaltung der Teekanne integrieren?",
     "detailSections": [
       {
         "heading": "Ausgangspunkt",
@@ -801,14 +791,14 @@
   },
   {
     "slug": "chair",
-    "title": "Stuhlstudie",
-    "description": "Eine visuelle Entwurfsserie zu einem Sitzmöbel aus dem älteren Projektarchiv.",
+    "title": "Sitzobjekt",
+    "description": "Eine Entwurfsserie zu einem Sitzobjekt aus dem älteren Projektarchiv.",
     "category": "Produktdesign",
     "label": "Produktstudie",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_00.jpg",
-    "alt": "Stuhlstudie, dokumentiert in einer Bildserie",
+    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_02.jpg",
+    "alt": "Sitzobjekt, dritte Entwurfsansicht",
     "detailEyebrow": "Älteres Projektarchiv · Produktdesign",
-    "detailLead": "Eine visuelle Entwurfsserie zu einem Sitzmöbel aus dem älteren Projektarchiv.",
+    "detailLead": "Eine Entwurfsserie zu einem Sitzobjekt aus dem älteren Projektarchiv.",
     "detailSections": [
       {
         "body": "Im ursprünglichen Archiv ist die Arbeit als Bildserie erhalten; eine ausführlichere Projektbeschreibung liegt dort nicht vor. Deshalb bleibt die Darstellung bewusst auf die Entwurfsansichten konzentriert."
@@ -817,7 +807,7 @@
     "gallery": [
       {
         "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_00.jpg",
-        "alt": "Stuhlstudie, erste Ansicht",
+        "alt": "Sitzobjekt, erste Ansicht",
         "caption": "Ansicht 01"
       },
       {
