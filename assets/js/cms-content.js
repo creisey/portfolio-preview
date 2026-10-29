@@ -33,7 +33,7 @@
     if (Array.isArray(project.gallery) && project.gallery.length) {
       const gallery = make("div", "detail-gallery" + (project.gallery.length === 1 ? " single-image" : ""));
       project.gallery.forEach((item) => {
-        const figure = make("figure", "");
+        const figure = make("figure", project.slug === "teapot" && item.image && item.image.endsWith("/tea_pot00.jpg") ? "teapot-use-image" : "");
         const img = make("img", "");
         img.src = item.image || "";
         img.alt = item.alt || item.caption || project.title || "";
