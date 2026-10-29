@@ -186,6 +186,11 @@
         "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/hund2.jpg",
         "alt": "Weitere Ansicht des Holzspielzeugs",
         "caption": "Form und Details"
+      },
+      {
+        "image": "https://josi.as/assets/images/hund.gif",
+        "alt": "Animiertes GIF des Hundes",
+        "caption": "Animation"
       }
     ]
   },
