@@ -5,7 +5,7 @@
     "description": "Ein Designwerkzeug für Veränderungsprozesse: Wie Regeln, Anreize und freiwillige Erkenntnis zusammenwirken können, damit Menschen neue Wege mittragen.",
     "category": "Service Design",
     "label": "Masterarbeit · Service Design",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bewegen-mit-umdenken.jpg",
+    "image": "/assets/images/bewegen-mit-umdenken.jpg",
     "alt": "Konzept für nachhaltige urbane Mobilität",
     "detailEyebrow": "Masterarbeit · Service Design & Verhaltensänderung",
     "detailLead": "Wie gestaltet man Veränderung so, dass Menschen sie nicht nur hinnehmen, sondern verstehen und selbst mittragen?",
@@ -51,7 +51,7 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bewegen-mit-umdenken.jpg",
+        "image": "/assets/images/bewegen-mit-umdenken.jpg",
         "alt": "Projektbild der Masterarbeit Bewegen mit Umdenken",
         "caption": "Bewegen mit Umdenken · Masterarbeit"
       }
@@ -71,7 +71,7 @@
     "description": "Konzept einer Industrienähmaschine mit Linearmotoren. Der Antrieb soll mechanische Komplexität reduzieren und den Wartungsaufwand senken.",
     "category": "Industrie",
     "label": "Industrie",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine03.jpg",
+    "image": "/assets/images/maschine03.jpg",
     "alt": "Konstruktionskonzept einer Industrienähmaschine",
     "detailEyebrow": "Industrie · Produktentwicklung",
     "detailSections": [
@@ -90,22 +90,22 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine00.jpg",
+        "image": "/assets/images/maschine00.jpg",
         "alt": "Ansicht des Epsilon Maschinenkonzepts",
         "caption": "Produktkonzept"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine03.jpg",
+        "image": "/assets/images/maschine03.jpg",
         "alt": "Detail des Maschinenentwurfs Epsilon",
         "caption": "Form und Konstruktion"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine01.jpg",
+        "image": "/assets/images/maschine01.jpg",
         "alt": "Weitere Ansicht der Industrienähmaschine",
         "caption": "Entwurfsansicht"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/maschine04.jpg",
+        "image": "/assets/images/maschine04.jpg",
         "alt": "Weitere Darstellung des Epsilon Projekts",
         "caption": "Projektvisualisierung"
       }
@@ -117,7 +117,7 @@
     "description": "Eine Sitzbank aus Fichte, aufgebaut aus vier CNC-gefrästen Elementen. Die Konstruktion verbindet eine klare Form mit einer reduzierten Montage.",
     "category": "Eigenprojekt",
     "label": "Eigenprojekt",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank5.jpg",
+    "image": "/assets/images/bank5.jpg",
     "alt": "Sitzbank aus Fichtenholz im Badezimmer",
     "detailEyebrow": "Eigenprojekt · Möbelbau",
     "detailSections": [
@@ -136,17 +136,17 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank2.jpg",
+        "image": "/assets/images/bank2.jpg",
         "alt": "Frühe Ansicht der Badezimmerbank",
         "caption": "Entwurf und Form"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank6.jpg",
+        "image": "/assets/images/bank6.jpg",
         "alt": "Detail der Sitzbank",
         "caption": "Material und Detail"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/bank7.jpg",
+        "image": "/assets/images/bank7.jpg",
         "alt": "Weitere Ansicht der Badezimmerbank",
         "caption": "Ansicht im Raum"
       }
@@ -158,7 +158,7 @@
     "description": "Ein kleiner Ziehhund aus Fichtenholz. Räder und Kordel machen aus einer einfachen Form ein haptisches Spielobjekt.",
     "category": "Produktdesign",
     "label": "Produktdesign",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/hund1.jpg",
+    "image": "/assets/images/hund1.jpg",
     "alt": "Handgefertigter Ziehhund aus Holz",
     "detailEyebrow": "Produktdesign · Holz",
     "detailSections": [
@@ -173,17 +173,17 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/hund1.jpg",
+        "image": "/assets/images/hund1.jpg",
         "alt": "Handgefertigter Ziehhund aus Holz",
         "caption": "Spielzeug aus Holz"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/hund2.jpg",
+        "image": "/assets/images/hund2.jpg",
         "alt": "Weitere Ansicht des Holzspielzeugs",
         "caption": "Form und Details"
       },
       {
-        "image": "https://josi.as/assets/images/hund.gif",
+        "image": "/assets/images/hund.gif",
         "alt": "Animiertes GIF des Hundes",
         "caption": "Animation"
       }
@@ -195,7 +195,7 @@
     "description": "Eine Erweiterung für den IKEA MICKE, gefertigt aus geölter Eiche. Steckverbindungen halten die Konstruktion zusammen und prägen zugleich das Erscheinungsbild.",
     "category": "Möbel",
     "label": "Möbel",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer1.jpg",
+    "image": "/assets/images/sekretaer1.jpg",
     "alt": "Erweiterung des IKEA MICKE Sekretärs aus Holz",
     "detailEyebrow": "Eigenprojekt · Möbel",
     "detailSections": [
@@ -214,17 +214,17 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer0.jpg",
+        "image": "/assets/images/sekretaer0.jpg",
         "alt": "Ausgangsmöbel für die Sekretär-Erweiterung",
         "caption": "Ausgangslage"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer1.jpg",
+        "image": "/assets/images/sekretaer1.jpg",
         "alt": "Erweiterung des Sekretärs aus Holz",
         "caption": "Erweiterung"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/sekretaer2.jpg",
+        "image": "/assets/images/sekretaer2.jpg",
         "alt": "Detail der Sekretär-Erweiterung",
         "caption": "Konstruktionsdetail"
       }
@@ -236,7 +236,7 @@
     "description": "Eine eigene Interpretation des Brettspiels DOG. Der modulare Aufbau und die kompakte Ausführung machen das Spiel praktisch für unterwegs.",
     "category": "Eigenprojekt",
     "label": "Eigenprojekt",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dog0.jpg",
+    "image": "/assets/images/dog0.jpg",
     "alt": "Selbst gestaltetes DOG Brettspiel aus Holz",
     "detailEyebrow": "Eigenprojekt · Spiel",
     "detailSections": [
@@ -251,17 +251,17 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dog0.jpg",
+        "image": "/assets/images/dog0.jpg",
         "alt": "DOG Brettspiel aus Bambus",
         "caption": "Spielbrett"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dog1.jpg",
+        "image": "/assets/images/dog1.jpg",
         "alt": "Detailansicht des DOG Spiels",
         "caption": "Material und Fräsung"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dog3.jpg",
+        "image": "/assets/images/dog3.jpg",
         "alt": "Weitere Ansicht des DOG Spiels",
         "caption": "Spiel im Detail"
       }
@@ -273,7 +273,7 @@
     "description": "Aus zweidimensionalem Planenmaterial wird durch Falttechnik ein dreidimensionaler Wäschekorb, der sich auf dem Rücken tragen lässt.",
     "category": "Produktdesign",
     "label": "Bachelor · Produktdesign",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_1.jpg",
+    "image": "/assets/images/cesta_1.jpg",
     "alt": "Cesta, ein faltbarer Wäschekorb zum Tragen auf dem Rücken",
     "detailEyebrow": "Bachelor · Produktdesign",
     "detailLead": "Ein Wäschekorb, der sich dem Alltag anpasst – und auf dem Rücken getragen werden kann.",
@@ -286,7 +286,7 @@
         "heading": "Ansatz",
         "body": "Aus Origami-Experimenten entstand die Idee, ein flächiges Material durch gezielte Faltungen in eine stabile dreidimensionale Form zu bringen. Mit Planenmaterial und einer Sattlernähmaschine wurde ein tragbarer Korb entwickelt.",
         "imageAfter": {
-          "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_2.jpg",
+          "image": "/assets/images/cesta_2.jpg",
           "alt": "Cesta, Detailansicht",
           "caption": "Form und Aufbau",
           "className": "cesta-portrait-image"
@@ -295,22 +295,22 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_1.jpg",
+        "image": "/assets/images/cesta_1.jpg",
         "alt": "Cesta, Gesamtansicht",
         "caption": "Produktkonzept"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_4.jpg",
+        "image": "/assets/images/cesta_4.jpg",
         "alt": "Faltstruktur des Materials",
         "caption": "Faltstruktur"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_5.jpg",
+        "image": "/assets/images/cesta_5.jpg",
         "alt": "Cesta in der Anwendung",
         "caption": "Anwendung"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/cesta_6.jpg",
+        "image": "/assets/images/cesta_6.jpg",
         "alt": "Fertigung von Cesta",
         "caption": "Umsetzung"
       }
@@ -322,7 +322,7 @@
     "description": "Ein Zukunftsszenario mit autonomen Zweiplätzern im Nahverkehr und einem Gondelsystem für längere Strecken.",
     "category": "Mobilität",
     "label": "Bachelor · Mobilität",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/car_side.jpg",
+    "image": "/assets/images/car_side.jpg",
     "alt": "Car Utopia, Konzept für autonome urbane Mobilität",
     "detailEyebrow": "Bachelor · Zukunftsmobilität",
     "detailLead": "Ein Mobilitätssystem, das die Flexibilität des Autos mit der Effizienz eines vernetzten Verkehrssystems verbinden soll.",
@@ -348,17 +348,17 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/car_front.jpg",
+        "image": "/assets/images/car_front.jpg",
         "alt": "Car Utopia, Frontansicht",
         "caption": "Fahrzeugkonzept"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/car_side.jpg",
+        "image": "/assets/images/car_side.jpg",
         "alt": "Car Utopia, Seitenansicht",
         "caption": "Proportionen"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/car_back.jpg",
+        "image": "/assets/images/car_back.jpg",
         "alt": "Car Utopia, Heckansicht",
         "caption": "Detailansicht"
       }
@@ -366,18 +366,18 @@
     "resources": [
       {
         "label": "Film 1 separat öffnen ↗",
-        "url": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/video/kreuzung_BIGER.mp4"
+        "url": "/assets/video/kreuzung_BIGER.mp4"
       },
       {
         "label": "Film 2 separat öffnen ↗",
-        "url": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/video/gondel-schritt.mp4"
+        "url": "/assets/video/gondel-schritt.mp4"
       },
       {
         "label": "Film 3 separat öffnen ↗",
-        "url": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/video/_car_in_8_.mp4"
+        "url": "/assets/video/_car_in_8_.mp4"
       }
     ],
-    "customHtml": "<div class=\"detail-video\"><video autoplay muted loop playsinline preload=\"auto\"> \n    <source src=\"https://raw.githubusercontent.com/creisey/portfolio/master/assets/video/kreuzung_BIGER.mp4\"></source>\n</video></div>\n\nMöchte man weitere Strecken zurücklegen, gelangt man in ein Ferntransfersystem. Mit diesem wird die 2er Kapsel zur Gondel.\n\n<div class=\"detail-video\"><video autoplay muted loop playsinline preload=\"auto\"> \n    <source src=\"https://raw.githubusercontent.com/creisey/portfolio/master/assets/video/gondel-schritt.mp4\"></source>\n</video></div>\n\n<div class=\"detail-video\"><video autoplay muted loop playsinline preload=\"auto\"><source src=\"https://raw.githubusercontent.com/creisey/portfolio/master/assets/video/_car_in_8_.mp4\" type=\"video/mp4\"></video></div>"
+    "customHtml": "<div class=\"detail-video\"><video autoplay muted loop playsinline preload=\"auto\"> \n    <source src=\"/assets/video/kreuzung_BIGER.mp4\"></source>\n</video></div>\n\nMöchte man weitere Strecken zurücklegen, gelangt man in ein Ferntransfersystem. Mit diesem wird die 2er Kapsel zur Gondel.\n\n<div class=\"detail-video\"><video autoplay muted loop playsinline preload=\"auto\"> \n    <source src=\"/assets/video/gondel-schritt.mp4\"></source>\n</video></div>\n\n<div class=\"detail-video\"><video autoplay muted loop playsinline preload=\"auto\"><source src=\"/assets/video/_car_in_8_.mp4\" type=\"video/mp4\"></video></div>"
   },
   {
     "slug": "clayon",
@@ -385,7 +385,7 @@
     "description": "Ein leichtes Schlafsystem mit integrierter Federung, das dünne Matratzen und individuell anpassbare Auflagezonen ermöglicht.",
     "category": "Produktdesign",
     "label": "Bachelor · Produktentwicklung",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_1.jpg",
+    "image": "/assets/images/clayon_1.jpg",
     "alt": "Clayon, ein leichtes Schlafsystem mit integrierter Federung",
     "detailEyebrow": "Bachelor · Produktentwicklung",
     "detailLead": "Ein leichtes Schlafsystem mit integrierter Federung und individuell anpassbaren Auflagezonen.",
@@ -401,42 +401,42 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_1.jpg",
+        "image": "/assets/images/clayon_1.jpg",
         "alt": "Clayon, Produktkonzept",
         "caption": "Gesamtkonzept"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_2.jpg",
+        "image": "/assets/images/clayon_2.jpg",
         "alt": "Clayon, Detailansicht",
         "caption": "Aufbau"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_3.jpg",
+        "image": "/assets/images/clayon_3.jpg",
         "alt": "Clayon, Konstruktion",
         "caption": "Konstruktion"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_4.jpg",
+        "image": "/assets/images/clayon_4.jpg",
         "alt": "Clayon, Materialdetail",
         "caption": "Material"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_5.jpg",
+        "image": "/assets/images/clayon_5.jpg",
         "alt": "Clayon, Seitenansicht",
         "caption": "Seitenansicht"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_6.jpg",
+        "image": "/assets/images/clayon_6.jpg",
         "alt": "Clayon, weitere Konstruktionsansicht",
         "caption": "Federung"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_7.jpg",
+        "image": "/assets/images/clayon_7.jpg",
         "alt": "Clayon, weitere Darstellung",
         "caption": "Entwurf"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/clayon_8.jpg",
+        "image": "/assets/images/clayon_8.jpg",
         "alt": "Clayon, letzte Konzeptansicht",
         "caption": "Visualisierung"
       }
@@ -448,7 +448,7 @@
     "description": "Eine Auseinandersetzung mit der Teezubereitung und dem richtigen Zeitpunkt, Teebeutel oder Teeei aus dem Wasser zu nehmen.",
     "category": "Produktdesign",
     "label": "Bachelor · Produktdesign",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot05.jpg",
+    "image": "/assets/images/tea_pot05.jpg",
     "alt": "Teekannen-Konzept aus einer Bachelorarbeit",
     "detailEyebrow": "Bachelor · Produktdesign",
     "detailLead": "Wie lässt sich der richtige Moment zum Herausnehmen von Teebeutel oder Teeei in die Gestaltung der Teekanne integrieren?",
@@ -464,32 +464,32 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot01.jpg",
+        "image": "/assets/images/tea_pot01.jpg",
         "alt": "Teekannen-Konzept, Form",
         "caption": "Formstudie"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot02.jpg",
+        "image": "/assets/images/tea_pot02.jpg",
         "alt": "Teekannen-Konzept, Detail",
         "caption": "Detail"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot03.jpg",
+        "image": "/assets/images/tea_pot03.jpg",
         "alt": "Teekannen-Konzept, Konstruktion",
         "caption": "Konstruktion"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot04.jpg",
+        "image": "/assets/images/tea_pot04.jpg",
         "alt": "Teekannen-Konzept, Produktansicht",
         "caption": "Produktansicht"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot05.jpg",
+        "image": "/assets/images/tea_pot05.jpg",
         "alt": "Teekannen-Konzept, finale Ansicht",
         "caption": "Finale Darstellung"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tea_pot00.jpg",
+        "image": "/assets/images/tea_pot00.jpg",
         "alt": "Teekannen-Konzept, Darstellung der Bedienung und Anwendung",
         "caption": "Bedienung und Anwendung"
       }
@@ -501,7 +501,7 @@
     "description": "Ein Photoshop-Rendering mit einer Bildserie, die den visuellen Entwicklungsprozess zeigt.",
     "category": "Visualisierung",
     "label": "Visualisierung",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/leica_013.jpg",
+    "image": "/assets/images/leica_013.jpg",
     "alt": "Photoshop-Rendering einer Leica M8",
     "detailEyebrow": "Bachelor · Visualisierung",
     "detailLead": "Eine digitale Produktvisualisierung mit dokumentiertem Bildprozess.",
@@ -512,22 +512,22 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/evolution0000.jpg",
+        "image": "/assets/images/evolution0000.jpg",
         "alt": "Erster Schritt im Renderingprozess",
         "caption": "Prozess 01"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/evolution0002.jpg",
+        "image": "/assets/images/evolution0002.jpg",
         "alt": "Weiterer Schritt im Renderingprozess",
         "caption": "Prozess 02"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/evolution0004.jpg",
+        "image": "/assets/images/evolution0004.jpg",
         "alt": "Zwischenstand des Renderings",
         "caption": "Prozess 03"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/evolution0006.jpg",
+        "image": "/assets/images/evolution0006.jpg",
         "alt": "Später Stand des Renderings",
         "caption": "Prozess 04"
       }
@@ -539,7 +539,7 @@
     "description": "Ein erweiterbares Tischsystem im Format 60 × 60 cm aus sechs Standardelementen und verschraubten Leitungsrohren.",
     "category": "Möbelsystem",
     "label": "Bachelor · Möbelsystem",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/table_single.jpg",
+    "image": "/assets/images/table_single.jpg",
     "alt": "Pipeline, ein modulares Tischsystem aus Standardteilen und Leitungsrohren",
     "detailEyebrow": "Bachelor · Möbelsystem",
     "detailLead": "Ein modulares Tischsystem im Format 60 × 60 cm aus sechs Standardteilen und verschraubten Leitungsrohren.",
@@ -555,27 +555,27 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/table_single.jpg",
+        "image": "/assets/images/table_single.jpg",
         "alt": "Pipeline, Tischsystem",
         "caption": "Tischsystem"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/pipeline_01.jpg",
+        "image": "/assets/images/pipeline_01.jpg",
         "alt": "Pipeline, Struktur",
         "caption": "Struktur"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/pipeline_02.jpg",
+        "image": "/assets/images/pipeline_02.jpg",
         "alt": "Pipeline, Verbindungselement",
         "caption": "Verbindungselement"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/pipeline_03.jpg",
+        "image": "/assets/images/pipeline_03.jpg",
         "alt": "Pipeline, Detail",
         "caption": "Detail"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/pipeline_05.jpg",
+        "image": "/assets/images/pipeline_05.jpg",
         "alt": "Pipeline, weitere Ansicht",
         "caption": "Erweiterung"
       }
@@ -587,7 +587,7 @@
     "description": "Ein leichter Elektrorollstuhl, der sich durch einen Klappmechanismus an unterschiedliche Situationen und Bewegungsräume anpassen lässt.",
     "category": "Mobilität",
     "label": "Bachelor · Mobilität",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_01.jpg",
+    "image": "/assets/images/viadi_01.jpg",
     "alt": "Viadi, ein leichter faltbarer Elektrorollstuhl",
     "detailEyebrow": "Bachelor · Mobilität & Assistive Design",
     "detailLead": "Ein leichter Elektrorollstuhl, der sich mit einem einfachen Klappmechanismus an unterschiedliche Reisesituationen anpassen lässt.",
@@ -603,37 +603,37 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_01.jpg",
+        "image": "/assets/images/viadi_01.jpg",
         "alt": "Viadi, erste Konzeptansicht",
         "caption": "Konzept"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_02.jpg",
+        "image": "/assets/images/viadi_02.jpg",
         "alt": "Viadi, Seitenansicht",
         "caption": "Seitenansicht"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_03.jpg",
+        "image": "/assets/images/viadi_03.jpg",
         "alt": "Viadi, Faltmechanismus",
         "caption": "Faltmechanismus"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_04.jpg",
+        "image": "/assets/images/viadi_04.jpg",
         "alt": "Viadi, Sitzposition",
         "caption": "Sitzposition"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_05.jpg",
+        "image": "/assets/images/viadi_05.jpg",
         "alt": "Viadi, Detailansicht",
         "caption": "Detail"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_06.jpg",
+        "image": "/assets/images/viadi_06.jpg",
         "alt": "Viadi, finale Ansicht",
         "caption": "Finale Darstellung"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/viadi_07.jpg",
+        "image": "/assets/images/viadi_07.jpg",
         "alt": "Viadi, weitere Konzeptansicht",
         "caption": "Ansicht"
       }
@@ -645,7 +645,7 @@
     "description": "Eine Armlehne, die Anrufe und Nachrichten über Wärme, Kälte und unterschiedliche Vibrationsmuster vermittelt, ohne den Blick von der Strasse abzulenken.",
     "category": "Interaction Design",
     "label": "Teamprojekt · Interaction Design",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/vita.jpg",
+    "image": "/assets/images/vita.jpg",
     "alt": "Vita, ein Interaktionskonzept für eine warnende Armlehne im Auto",
     "detailEyebrow": "Internationale Zusammenarbeit · Continental Guadalajara, Mexiko",
     "detailLead": "Informationen spürbar machen, ohne den Blick von der Strasse abzulenken.",
@@ -670,7 +670,7 @@
     "description": "Ein TV-Möbel als Weiterentwicklung des modularen Pipeline-Systems.",
     "category": "Möbel",
     "label": "Eigenprojekt · Möbel",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv.jpg",
+    "image": "/assets/images/tv.jpg",
     "alt": "TV-Möbel als Erweiterung des modularen Pipeline-Systems",
     "detailEyebrow": "Eigenprojekt · Möbel",
     "detailLead": "Ein TV-Möbel als Erweiterung des modularen Pipeline-Systems.",
@@ -681,27 +681,27 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv0.jpg",
+        "image": "/assets/images/tv0.jpg",
         "alt": "Pipeline Extension, erste Ansicht",
         "caption": "Entwurf"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv1.jpg",
+        "image": "/assets/images/tv1.jpg",
         "alt": "Pipeline Extension, Seitenansicht",
         "caption": "Proportionen"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv2.jpg",
+        "image": "/assets/images/tv2.jpg",
         "alt": "Pipeline Extension, Konstruktion",
         "caption": "Konstruktion"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv3.jpg",
+        "image": "/assets/images/tv3.jpg",
         "alt": "Pipeline Extension, Detail",
         "caption": "Detail"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tv4.jpg",
+        "image": "/assets/images/tv4.jpg",
         "alt": "Pipeline Extension, finale Ansicht",
         "caption": "Finale Ansicht"
       }
@@ -713,7 +713,7 @@
     "description": "Ein dekoratives Element, das Gestaltung und akustische Dämmung zusammenführt.",
     "category": "Materialdesign",
     "label": "Master · Material",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles1.jpg",
+    "image": "/assets/images/tiles1.jpg",
     "alt": "Dekorative Akustik-Dämmelemente",
     "detailEyebrow": "Master · Materialdesign",
     "detailLead": "Ein dekoratives Dämmelement, das Oberflächengestaltung mit akustischer Funktion verbindet.",
@@ -724,22 +724,22 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles0.jpg",
+        "image": "/assets/images/tiles0.jpg",
         "alt": "Akustik-Dämmelemente, erste Ansicht",
         "caption": "Konzept"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles1.jpg",
+        "image": "/assets/images/tiles1.jpg",
         "alt": "Akustik-Dämmelemente, Oberfläche",
         "caption": "Oberfläche"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles2.jpg",
+        "image": "/assets/images/tiles2.jpg",
         "alt": "Akustik-Dämmelemente, Anordnung",
         "caption": "Anordnung"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/tiles3.jpg",
+        "image": "/assets/images/tiles3.jpg",
         "alt": "Akustik-Dämmelemente, Detail",
         "caption": "Detail"
       }
@@ -751,7 +751,7 @@
     "description": "Eine zweite DOG-Interpretation: gelasert, modular aufgebaut und wie ein Puzzle für unterwegs zusammengesetzt.",
     "category": "Eigenprojekt",
     "label": "Eigenprojekt · Spiel",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dogs2.jpg",
+    "image": "/assets/images/dogs2.jpg",
     "alt": "Modulare, gelaserte Variante des DOG-Brettspiels",
     "detailEyebrow": "Eigenprojekt · Spiel",
     "detailLead": "Eine kompakte, modulare Interpretation des bekannten DOG-Brettspiels – gelasert und wie ein Puzzle aufgebaut.",
@@ -762,17 +762,17 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dogs0.jpg",
+        "image": "/assets/images/dogs0.jpg",
         "alt": "DOG Laser-Edition, Gesamtansicht",
         "caption": "Spielbrett"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dogs1.jpg",
+        "image": "/assets/images/dogs1.jpg",
         "alt": "DOG Laser-Edition, Detail",
         "caption": "Details"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/dogs2.jpg",
+        "image": "/assets/images/dogs2.jpg",
         "alt": "DOG Laser-Edition, weitere Ansicht",
         "caption": "Modularer Aufbau"
       }
@@ -784,7 +784,7 @@
     "description": "Ein frühes interaktives Portfolio-Experiment aus der Bachelorzeit. Die damalige Live-Demo basierte auf Flash und wird hier deshalb nicht eingebettet.",
     "category": "Digitales Design",
     "label": "Bachelor · Digital",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/portfolio.jpg",
+    "image": "/assets/images/portfolio.jpg",
     "alt": "Titelbild des digitalen Portfolios aus der Bachelorzeit",
     "detailEyebrow": "Bachelor · Digitales Experiment",
     "embedUrl": "https://i.josi.as/3",
@@ -796,7 +796,7 @@
     "description": "Eine Entwurfsserie zu einem Sitzobjekt aus dem älteren Projektarchiv.",
     "category": "Produktdesign",
     "label": "Produktstudie",
-    "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_02.jpg",
+    "image": "/assets/images/chair_02.jpg",
     "alt": "Sitzobjekt, dritte Entwurfsansicht",
     "detailEyebrow": "Älteres Projektarchiv · Produktdesign",
     "detailLead": "Eine Entwurfsserie zu einem Sitzobjekt aus dem älteren Projektarchiv.",
@@ -807,27 +807,27 @@
     ],
     "gallery": [
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_00.jpg",
+        "image": "/assets/images/chair_00.jpg",
         "alt": "Sitzobjekt, erste Ansicht",
         "caption": "Ansicht 01"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_01.jpg",
+        "image": "/assets/images/chair_01.jpg",
         "alt": "Stuhlstudie, zweite Ansicht",
         "caption": "Ansicht 02"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_02.jpg",
+        "image": "/assets/images/chair_02.jpg",
         "alt": "Stuhlstudie, dritte Ansicht",
         "caption": "Ansicht 03"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_03.jpg",
+        "image": "/assets/images/chair_03.jpg",
         "alt": "Stuhlstudie, vierte Ansicht",
         "caption": "Ansicht 04"
       },
       {
-        "image": "https://raw.githubusercontent.com/creisey/portfolio/master/assets/images/chair_04.jpg",
+        "image": "/assets/images/chair_04.jpg",
         "alt": "Stuhlstudie, fünfte Ansicht",
         "caption": "Ansicht 05"
       }
