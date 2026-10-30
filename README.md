@@ -1,58 +1,92 @@
-# Portfolio-Konzept – Josias Marti
+# Portfolio – Josias Marti
 
-Dieses Repository ist die alleinige Entwicklungsbasis für das neue Portfolio. Änderungen am alten Repository `creisey/portfolio` sind nicht Teil dieses Workflows.
+Persönliches Portfolio von Josias Marti mit ausgewählten Arbeiten aus Industrial Design, Produktentwicklung, Service Design, Interaction Design und eigenen Projekten.
 
-## Veröffentlichungsablauf
+**Live:** [https://josi.as](https://josi.as)
 
-1. Änderungen und Tests erfolgen hier auf `main`.
-2. GitHub Actions veröffentlicht den Stand als Vorschau.
-3. Die Vorschau wird geprüft, insbesondere auf Mobilgeräten, bei Projekt-Detailseiten, Videos und PDFs.
-4. Erst nach ausdrücklicher Freigabe wird die produktive Veröffentlichung von `josi.as` umgestellt.
+## Projekt und Repository
 
-**Wichtig:** `josi.as` bleibt bis zur Freigabe unverändert. Keine DNS- oder Produktionsumstellung ohne explizite Freigabe.
+- **Website:** https://josi.as
+- **Repository:** https://github.com/creisey/portfolio-preview
+- **Produktiver Branch:** `main`
+- **Hosting:** GitHub Pages
+- **Deployment:** GitHub Actions über `.github/workflows/pages.yml`
 
-## Vorschau und Hosting
+Dieses Repository ist die Entwicklungs- und Veröffentlichungsbasis der aktuellen Website. Änderungen an `main` lösen automatisch den Deployment-Workflow aus. Das frühere Repository `creisey/portfolio` bleibt unverändert und dient nicht als Entwicklungsbasis.
 
-- Repository: https://github.com/creisey/portfolio-preview
-- GitHub-Pages-Standardadresse: https://creisey.github.io/portfolio-preview/
-- Gewünschte Vorschau-Adresse: https://preview.josi.as
-- Workflow: `.github/workflows/pages.yml`
+## Veröffentlichung
 
-Der Workflow veröffentlicht statische Dateien aus diesem Repository über GitHub Actions. Den Status und das Ergebnis des jeweils neuesten Laufs zeigt die [GitHub-Actions-Übersicht](https://github.com/creisey/portfolio-preview/actions/workflows/pages.yml).
+Bei jedem Push auf `main` führt GitHub Actions die Veröffentlichung aus. Der Workflow:
 
-Die Custom-Domain `preview.josi.as` muss in den GitHub-Pages-Einstellungen dieses Repositorys hinterlegt und beim DNS-Anbieter auf `creisey.github.io` verwiesen werden. Da die Veröffentlichung über einen eigenen GitHub-Actions-Workflow erfolgt, reicht eine `CNAME`-Datei im Repository allein nicht aus. Domain- und DNS-Konfiguration müssen separat geprüft werden.
+1. checkt das Repository aus und richtet Node.js ein;
+2. stellt PDF.js lokal bereit;
+3. erzeugt die aktuelle PDF-Fassung des Lebenslaufs;
+4. erstellt das GitHub-Pages-Artefakt und veröffentlicht die statische Website.
 
-## Inhalt und bisherige Gestaltungsideen
+Den Status und die Protokolle findest du in der [GitHub-Actions-Übersicht](https://github.com/creisey/portfolio-preview/actions/workflows/pages.yml).
 
-- Eigenständige, editorial geprägte Gestaltung mit markanter Typografie, kräftigem Akzent und bewusst unregelmässigem, aber kontrolliertem Raster.
-- Projektübersicht mit separaten Detailansichten und Rücknavigation.
-- Projekttexte und Bildmaterial für Industrie-, Produkt-, Möbel-, Mobilitäts- und Eigenprojekte.
-- Ausführlichere Darstellung von **Car Utopia** inklusive drei Videosequenzen.
-- Masterarbeit **Bewegen mit Umdenken** mit Drei-Phasen-Modell und PDF.
-- Profil, Kompetenzen, beruflicher Lebenslauf und druckbare CV-Fassung.
-- Responsive Darstellung für kleine Bildschirme.
-- Selbst gehosteter PDF.js-Viewer für die PDF-Darstellung; PDF-Generierung über den GitHub-Actions-Workflow.
+Die produktive Website ist unter [https://josi.as](https://josi.as) erreichbar. Domain- und DNS-Einstellungen werden separat bei GitHub Pages und Cloudflare verwaltet und sind nicht Bestandteil des Deployment-Workflows.
 
-## Medien und Quellen
+## Inhalte und Aufbau
 
-Bestehende Bilder, Videos und Archivmaterial werden vorerst aus dem alten Repository referenziert. Das alte Repository ist dabei ausschliesslich Quelle für vorhandene Inhalte und Medien; neue Portfolio-Entwicklung findet hier statt. Falls Medien später vollständig in dieses Repository übernommen werden, sollen Pfade und Dateigrössen vor der Umstellung geprüft werden.
+Die Website umfasst:
 
-## Vor einer Freigabe prüfen
+- eine Projektübersicht mit eigenständigen Projekt-Detailansichten;
+- Projektbeschreibungen, Bildergalerien, Videos und weiterführende Dokumente;
+- Profil, Kompetenzen und beruflichen Lebenslauf;
+- eine druckbare CV-Fassung als PDF;
+- eine responsive Darstellung für unterschiedliche Bildschirmgrössen;
+- einen lokal eingebundenen PDF.js-Viewer.
 
-- [ ] Vorschau-Domain `preview.josi.as` und HTTPS funktionieren.
-- [ ] Navigation und direkte Links auf Projekt-Detailseiten funktionieren.
-- [ ] Alle Bilder, Videos und PDF-Dateien laden korrekt.
-- [ ] CV-Druck und PDF-Erzeugung funktionieren.
-- [ ] Mobile Darstellung und Tastaturbedienbarkeit sind geprüft.
-- [ ] Keine Testtexte oder unbeabsichtigten persönlichen Angaben sind enthalten.
-- [ ] Produktivumstellung auf `josi.as` erst nach ausdrücklicher Freigabe.
+Die Projektübersicht und die redaktionell gepflegten Inhalte liegen teilweise als strukturierte JSON-Dateien vor. Die Darstellung und das Layout werden in der Website umgesetzt.
 
-## Inhalte über Pages CMS pflegen
+## Inhalte mit Pages CMS pflegen
 
-Pages CMS ist für dieses Repository auf dem Branch `main` konfiguriert. Die Projektübersicht wird aus `content/projects.json` gespeist; die 19 Projekte sind dort als strukturierte Datensätze hinterlegt. In Pages CMS können Titel, Kurzbeschreibung, Kategorie, Bildetikett, Titelbild und Bildbeschreibung bearbeitet werden. Änderungen werden als Commits in diesem Repository gespeichert und lösen die Vorschau-Veröffentlichung über GitHub Actions aus.
+[Pages CMS](https://pagescms.org/) ist als Redaktionsoberfläche für dieses Repository konfiguriert. Änderungen werden als Commits auf `main` gespeichert und lösen anschliessend das Deployment aus.
 
-- CMS-Konfiguration: `.pages.yml`
-- Strukturierte Projektdaten: `content/projects.json`
-- Anzeige der CMS-Projektdaten: `assets/js/cms-content.js`
+| Bereich | Datei | Zweck |
+| --- | --- | --- |
+| CMS-Konfiguration | `.pages.yml` | Redaktionsoberfläche und Felder |
+| Projekte | `content/projects.json` | Projektübersicht und Detailinhalte |
+| Homepage | `content/homepage.json` | Texte und Inhalte der Startseite |
+| CMS-Anbindung | `assets/js/cms-content.js` | Einlesen und Anzeigen der CMS-Inhalte |
+| Website | `index.html` | Struktur, Darstellung und weitere Seiteninhalte |
 
-Die ausführlichen Projekt-Detailtexte, Profiltexte und CV-Inhalte sind vorerst weiterhin Teil von `index.html` und noch nicht in CMS-Formulare ausgelagert. Titelbilder können weiterhin auf vorhandene Medien im alten Repository verweisen; neue Uploads gehören nach `assets/uploads`. Änderungen im alten Repository und an der produktiven Domain `josi.as` sind nicht vorgesehen.
+Im CMS lassen sich unter anderem Startseitentexte, Projekttitel, Beschreibungen, Kategorien, Titelbilder, Bildbeschreibungen, Detailtexte, Galerien und Ressourcen pflegen. Spezialinhalte können als HTML hinterlegt werden; dafür sind HTML-Kenntnisse erforderlich.
+
+Neue Medien-Uploads über Pages CMS werden in `assets/uploads/` abgelegt. Bestehende, migrierte Bilder und Videos liegen lokal im Repository unter `assets/images/` und `assets/video/`.
+
+## Medien und Dateien
+
+Die verwendeten Portfolio-Bilder und Videos sind in dieses Repository übernommen worden. Dadurch ist die Website für diese Medien nicht mehr auf die entsprechenden Dateien im alten Repository angewiesen.
+
+- Bilder: `assets/images/`
+- Videos: `assets/video/`
+- CMS-Uploads: `assets/uploads/`
+- PDF.js-Dateien: `assets/pdfjs/` (werden im Deployment-Workflow bereitgestellt)
+
+Bitte Medienpfade in den Inhaltsdateien konsistent als Website-Pfade referenzieren, beispielsweise `/assets/images/dateiname.jpg`.
+
+## Entwicklung und Pflege
+
+1. Repository klonen oder den aktuellen Stand von `main` holen.
+2. Änderungen lokal vornehmen.
+3. Geänderte Inhalte und Medien prüfen, insbesondere Bildpfade, Videos, PDF-Links und Projekt-Detailseiten.
+4. Änderungen committen und nach `main` pushen.
+5. Den GitHub-Actions-Lauf kontrollieren und die veröffentlichte Website unter [https://josi.as](https://josi.as) prüfen.
+
+Vor einer Veröffentlichung insbesondere kontrollieren:
+
+- Navigation und direkte Links auf Projekt-Detailseiten;
+- Bilder, Videos und PDF-Dateien;
+- Darstellung auf Mobilgeräten;
+- Tastaturbedienbarkeit und Bildbeschreibungen;
+- CV-Druck und PDF-Erzeugung;
+- unbeabsichtigte Testinhalte oder persönliche Angaben.
+
+## Wichtige Abgrenzung
+
+- Änderungen an der aktuellen Website erfolgen ausschliesslich in `creisey/portfolio-preview`.
+- Das frühere Repository `creisey/portfolio` wird nicht verändert.
+- Die produktive Website wird über den Deployment-Workflow dieses Repositories veröffentlicht.
+- DNS- und SSL-Konfiguration für `josi.as` werden separat verwaltet.
