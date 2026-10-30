@@ -12,22 +12,33 @@ Persönliches Portfolio von Josias Marti mit ausgewählten Arbeiten aus Industri
 - **Hosting:** GitHub Pages
 - **Deployment:** GitHub Actions über `.github/workflows/pages.yml`
 
-Dieses Repository ist die Entwicklungs- und Veröffentlichungsbasis der aktuellen Website. Änderungen an `main` lösen automatisch den Deployment-Workflow aus. Das frühere Repository `creisey/portfolio` bleibt unverändert und dient nicht als Entwicklungsbasis.
+Dieses Repository ist die Entwicklungs- und Veröffentlichungsbasis der aktuellen Website. Änderungen an `main` lösen automatisch den Build- und Deployment-Workflow aus. Das frühere Repository `creisey/portfolio` bleibt unverändert.
 
-## Veröffentlichung
+## Inhalte und Datenquellen
 
-Bei jedem Push auf `main` führt GitHub Actions die Veröffentlichung aus. Der Workflow:
+Pages CMS ist die Redaktionsoberfläche. Die redaktionellen Inhalte werden in JSON-Dateien gepflegt:
 
-1. checkt das Repository aus und richtet Node.js ein;
-2. stellt PDF.js lokal bereit;
-3. erzeugt die aktuelle PDF-Fassung des Lebenslaufs;
-4. erstellt das GitHub-Pages-Artefakt und veröffentlicht die statische Website.
+- `content/homepage.json`: Texte und Inhalte der Startseite
+- `content/projects.json`: Projektübersicht und Projekt-Detailinhalte
+- `.pages.yml`: Konfiguration der Pages-CMS-Oberfläche
+
+Die JSON-Dateien sind die einzige Quelle für diese CMS-Inhalte. Sie werden beim Deployment in die Website integriert. Es gibt keine nachträgliche Textüberschreibung im Browser.
+
+## Build und Veröffentlichung
+
+Bei jedem Push auf `main` führt GitHub Actions folgende Schritte aus:
+
+1. Repository auschecken und Node.js einrichten.
+2. PDF.js für den lokalen PDF-Viewer bereitstellen.
+3. Die aktuelle CV-PDF-Datei erzeugen.
+4. `scripts/build-site.cjs` ausführen. Das Skript startet die Website lokal mit Playwright, lädt die CMS-JSON-Daten über die bestehende Website-Logik und speichert das fertig gerenderte HTML im Verzeichnis `dist/`.
+5. Das statische Ergebnis aus `dist/` als GitHub-Pages-Artefakt veröffentlichen.
+
+Die veröffentlichte HTML-Seite enthält die CMS-Inhalte bereits. Der Browser muss die JSON-Daten nicht mehr nachladen, um Texte und Projektinhalte anzuzeigen. Das vermeidet sichtbare Textwechsel beim Laden.
 
 Den Status und die Protokolle findest du in der [GitHub-Actions-Übersicht](https://github.com/creisey/portfolio-preview/actions/workflows/pages.yml).
 
-Die produktive Website ist unter [https://josi.as](https://josi.as) erreichbar. Domain- und DNS-Einstellungen werden separat bei GitHub Pages und Cloudflare verwaltet und sind nicht Bestandteil des Deployment-Workflows.
-
-## Inhalte und Aufbau
+## Website-Inhalte
 
 Die Website umfasst:
 
@@ -38,42 +49,27 @@ Die Website umfasst:
 - eine responsive Darstellung für unterschiedliche Bildschirmgrössen;
 - einen lokal eingebundenen PDF.js-Viewer.
 
-Die Projektübersicht und die redaktionell gepflegten Inhalte liegen teilweise als strukturierte JSON-Dateien vor. Die Darstellung und das Layout werden in der Website umgesetzt.
+## Pages CMS
 
-## Inhalte mit Pages CMS pflegen
-
-[Pages CMS](https://pagescms.org/) ist als Redaktionsoberfläche für dieses Repository konfiguriert. Änderungen werden als Commits auf `main` gespeichert und lösen anschliessend das Deployment aus.
-
-| Bereich | Datei | Zweck |
-| --- | --- | --- |
-| CMS-Konfiguration | `.pages.yml` | Redaktionsoberfläche und Felder |
-| Projekte | `content/projects.json` | Projektübersicht und Detailinhalte |
-| Homepage | `content/homepage.json` | Texte und Inhalte der Startseite |
-| CMS-Anbindung | `assets/js/cms-content.js` | Einlesen und Anzeigen der CMS-Inhalte |
-| Website | `index.html` | Struktur, Darstellung und weitere Seiteninhalte |
+[Pages CMS](https://pagescms.org/) ist für dieses Repository konfiguriert. Änderungen werden als Commits auf `main` gespeichert und lösen anschliessend das Deployment aus.
 
 Im CMS lassen sich unter anderem Startseitentexte, Projekttitel, Beschreibungen, Kategorien, Titelbilder, Bildbeschreibungen, Detailtexte, Galerien und Ressourcen pflegen. Spezialinhalte können als HTML hinterlegt werden; dafür sind HTML-Kenntnisse erforderlich.
 
-Neue Medien-Uploads über Pages CMS werden in `assets/uploads/` abgelegt. Bestehende, migrierte Bilder und Videos liegen lokal im Repository unter `assets/images/` und `assets/video/`.
-
-## Medien und Dateien
-
-Die verwendeten Portfolio-Bilder und Videos sind in dieses Repository übernommen worden. Dadurch ist die Website für diese Medien nicht mehr auf die entsprechenden Dateien im alten Repository angewiesen.
+Neue Medien-Uploads über Pages CMS werden in `assets/uploads/` abgelegt. Bestehende Bilder und Videos liegen lokal im Repository:
 
 - Bilder: `assets/images/`
 - Videos: `assets/video/`
 - CMS-Uploads: `assets/uploads/`
 - PDF.js-Dateien: `assets/pdfjs/` (werden im Deployment-Workflow bereitgestellt)
 
-Bitte Medienpfade in den Inhaltsdateien konsistent als Website-Pfade referenzieren, beispielsweise `/assets/images/dateiname.jpg`.
-
 ## Entwicklung und Pflege
 
 1. Repository klonen oder den aktuellen Stand von `main` holen.
 2. Änderungen lokal vornehmen.
-3. Geänderte Inhalte und Medien prüfen, insbesondere Bildpfade, Videos, PDF-Links und Projekt-Detailseiten.
-4. Änderungen committen und nach `main` pushen.
-5. Den GitHub-Actions-Lauf kontrollieren und die veröffentlichte Website unter [https://josi.as](https://josi.as) prüfen.
+3. Bei Änderungen an CMS-Inhalten die JSON-Dateien bearbeiten oder Pages CMS verwenden.
+4. Den Build lokal mit den benötigten Node.js-Abhängigkeiten und Playwright ausführen: `NODE_PATH=/pfad/zu/node_modules node scripts/build-site.cjs`.
+5. Änderungen committen und nach `main` pushen.
+6. Den GitHub-Actions-Lauf kontrollieren und die veröffentlichte Website unter [https://josi.as](https://josi.as) prüfen.
 
 Vor einer Veröffentlichung insbesondere kontrollieren:
 
