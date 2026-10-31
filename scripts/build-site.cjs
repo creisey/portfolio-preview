@@ -80,18 +80,47 @@ async function main() {
   try {
     const page = await browser.newPage();
     const errors = [];
+    const failedRequests = [];
     page.on('pageerror', error => errors.push(error.message));
-    await page.goto(`http://127.0.0.1:${address.port}/index.html`, { waitUntil: 'networkidle', timeout: 90000 });
+    page.on('console', message => {
+      if (message.type() === 'error') errors.push(message.text());
+    });
+    page.on('requestfailed', request => failedRequests.push(request.url() + ': ' + (request.failure()?.errorText || 'request failed')));
+    await page.goto(`http://127.0.0.1:${address.port}/index.html`, { waitUntil: 'domcontentloaded', timeout: 90000 });
 
-    await page.waitForFunction(({ homepage, projects }) => {
-      const eyebrow = document.querySelector('[data-cms-home="heroEyebrow"]');
-      const cards = document.querySelectorAll('#projekte .project');
-      const firstSlug = projects[0] && projects[0].slug;
-      const firstDetail = firstSlug && document.querySelector('#detail-' + CSS.escape(firstSlug) + ' .detail-copy');
-      return eyebrow && eyebrow.textContent === homepage.heroEyebrow &&
-        cards.length === projects.length && firstDetail && firstDetail.children.length > 0;
-    }, { homepage, projects }, { timeout: 30000 });
+    try {
+      await page.waitForFunction(expected => {
+        const eyebrow = document.querySelector('[data-cms-home="heroEyebrow"]');
+        return eyebrow && eyebrow.textContent.trim() === expected;
+      }, homepage.heroEyebrow, { timeout: 30000 });
+    } catch (error) {
+      const state = await page.evaluate(({ projects }) => {
+        const eyebrow = document.querySelector('[data-cms-home="heroEyebrow"]');
+        const cards = document.querySelectorAll('#projekte .project');
+        const details = projects.map(project => {
+          const article = document.querySelector('#detail-' + CSS.escape(project.slug));
+          return { slug: project.slug, exists: !!article, copyChildren: article?.querySelector('.detail-copy')?.children.length ?? null };
+        });
+        return {
+          heroText: eyebrow?.textContent ?? null,
+          cardCount: cards.length,
+          detailCount: document.querySelectorAll('.project-detail[id^="detail-"]').length,
+          details
+        };
+      }, { projects });
+      throw new Error('CMS rendering did not complete. Diagnostic state: ' + JSON.stringify({ ...state, browserErrors: errors, failedRequests }, null, 2));
+    }
 
+    const state = await page.evaluate(({ projects }) => ({
+      cardCount: document.querySelectorAll('#projekte .project').length,
+      details: projects.map(project => {
+        const article = document.querySelector('#detail-' + CSS.escape(project.slug));
+        return { slug: project.slug, exists: !!article, copyChildren: article?.querySelector('.detail-copy')?.children.length ?? null };
+      })
+    }), { projects });
+    if (state.cardCount !== projects.length) throw new Error(`CMS card count mismatch: expected ${projects.length}, found ${state.cardCount}.`);
+    const missingDetails = state.details.filter(detail => !detail.exists || !detail.copyChildren);
+    if (missingDetails.length) throw new Error('CMS project details missing or empty: ' + JSON.stringify(missingDetails));
     if (errors.length) throw new Error('Browser errors during content rendering: ' + errors.join('; '));
 
     await page.evaluate(() => {
