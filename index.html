@@ -157,6 +157,31 @@ h1 { font-family: var(--site-font-heading); font-size: clamp(56px, 10vw, 138px);
 .contact h2 { font-size: clamp(42px, 7vw, 82px); letter-spacing: -.07em; line-height: .95; margin: 14px 0; font-weight: 600; }
 .contact p { color: var(--muted); max-width: 430px; }
 footer { padding: 22px 0 30px; border-top: 2px solid var(--site-on-background); display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; }
+.agency-work { padding: 76px 0 100px; border-top: 2px solid var(--site-on-background); }
+.agency-intro { max-width: 690px; color: var(--muted); font-size: 15px; margin: 18px 0 42px; }
+.agency-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 28px; border-top: 1px solid var(--line); }
+.agency-card { padding: 25px 0 28px; border-bottom: 1px solid var(--line); min-width: 0; }
+.agency-card.featured { grid-column: span 2; }
+.agency-kicker { color: var(--site-primary); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 8px; }
+.agency-card h3 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(24px, 3vw, 34px); font-weight: 500; letter-spacing: -.045em; line-height: 1.05; margin: 0 0 12px; }
+.agency-card h4 { font-size: 15px; margin: 18px 0 5px; }
+.agency-card p { color: var(--muted); font-size: 13px; max-width: 680px; margin: 0 0 10px; }
+.agency-meta { color: var(--muted); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; margin-top: 12px; }
+.agency-links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 12px; }
+.agency-links a { color: var(--site-primary); font-size: 12px; font-weight: 750; text-decoration: underline; text-underline-offset: 3px; }
+.agency-other { padding-top: 30px; }
+.agency-other h3 { font-size: 18px; margin-bottom: 14px; }
+.agency-other-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 24px; }
+.agency-other-item { border-top: 1px solid var(--line); padding-top: 12px; }
+.agency-other-item strong { display: block; font-size: 14px; margin-bottom: 5px; }
+.agency-other-item p { color: var(--muted); font-size: 12px; margin: 0; }
+.agency-confidentiality { color: var(--muted); font-size: 11px; max-width: 760px; margin-top: 30px; }
+@media (max-width: 720px) {
+  .agency-work { padding: 54px 0 70px; }
+  .agency-grid { grid-template-columns: 1fr; }
+  .agency-card.featured { grid-column: auto; }
+  .agency-other-list { grid-template-columns: 1fr; gap: 16px; }
+}
 @media (max-width: 720px) { .wrap { width: min(100% - 32px, 1200px); } .navlinks { gap: 12px; font-size: 11px; } .hero { grid-template-columns: 1fr; gap: 26px; padding-top: 72px; } .hero-note { justify-self: start; } .section-head { align-items: start; flex-direction: column; } .project, .project.feature, .project.side, .project:nth-child(3), .project:nth-child(4), .project:nth-child(5), .project:nth-child(6) { grid-column: span 12; margin-top: 0; } .project-media, .project:nth-child(1) .project-media, .project:nth-child(2) .project-media { min-height: 245px; } .about-inner { grid-template-columns: 1fr; gap: 28px; } .contact-inner { align-items: start; flex-direction: column; } .category { white-space: normal; text-align: right; } .project-detail { grid-template-columns: 1fr; gap: 8px; } .detail-gallery { grid-template-columns: 1fr 1fr; gap: 8px; } .detail-gallery figure:nth-child(3n+2), .detail-gallery figure:nth-child(4n+3) { margin-top: 0; } }
 
 .project-details { display: none; padding-top: 28px; }
@@ -258,7 +283,7 @@ body.project-open #cv { display: none !important; }
   <div class="wrap">
     <nav aria-label="Hauptnavigation">
       <a class="brand" href="#top"><span class="domain">josi.as</span><span class="descriptor">Josias Marti · Design</span></a>
-      <div class="navlinks"><a href="#projekte">Projekte</a><a href="#profil">Profil</a><a href="#cv">CV</a><a href="#kontakt">Kontakt</a></div>
+      <div class="navlinks"><a href="#projekte">Projekte</a><a href="#referenzen">Referenzen</a><a href="#profil">Profil</a><a href="#cv">CV</a><a href="#kontakt">Kontakt</a></div>
     </nav>
     <header class="hero" id="top">
       <div>
@@ -382,6 +407,63 @@ body.project-open #cv { display: none !important; }
         <article class="project-detail digital-portfolio-detail" id="detail-digital-portfolio"><div><div class="detail-meta">Bachelor · Digitales Experiment</div><h3>Digitales Portfolio</h3></div><div class="digital-portfolio-embed"><iframe class="digital-portfolio-frame" src="https://i.josi.as/3" title="Interaktives digitales Portfolio von Josias Marti" loading="lazy" allowfullscreen></iframe></div><p class="digital-portfolio-fallback">Falls die Einbettung nicht angezeigt wird: <a href="https://i.josi.as/3" target="_blank" rel="noopener noreferrer">Digitales Portfolio direkt öffnen ↗</a></p><p class="digital-portfolio-note">Interaktives Portfolio · ursprüngliche Flash-Präsentation</p></article>
         <article class="project-detail" id="detail-chair"><div><div class="detail-meta">Älteres Projektarchiv · Produktdesign</div><h3>Sitzobjekt</h3></div><div class="detail-copy"><p class="detail-lead">Eine Entwurfsserie zu einem Sitzobjekt aus dem älteren Projektarchiv.</p><div class="detail-gallery"><figure><img src="/assets/images/chair_00.jpg" alt="Sitzobjekt, erste Ansicht"><figcaption>Ansicht 01</figcaption></figure><figure><img src="/assets/images/chair_01.jpg" alt="Stuhlstudie, zweite Ansicht"><figcaption>Ansicht 02</figcaption></figure><figure><img src="/assets/images/chair_02.jpg" alt="Stuhlstudie, dritte Ansicht"><figcaption>Ansicht 03</figcaption></figure><figure><img src="/assets/images/chair_03.jpg" alt="Stuhlstudie, vierte Ansicht"><figcaption>Ansicht 04</figcaption></figure><figure><img src="/assets/images/chair_04.jpg" alt="Stuhlstudie, fünfte Ansicht"><figcaption>Ansicht 05</figcaption></figure></div><p>Im ursprünglichen Archiv ist die Arbeit als Bildserie erhalten; eine ausführlichere Projektbeschreibung liegt dort nicht vor. Deshalb bleibt die Darstellung bewusst auf die Entwurfsansichten konzentriert.</p></div></article>
       </section>
+    </section>
+    <section class="agency-work" id="referenzen" aria-labelledby="agency-title">
+      <div class="section-head">
+        <div><div class="eyebrow">Agentur &amp; Freelance</div><h2 id="agency-title">Ausgewählte Industrieprojekte.</h2></div>
+        <p>Produktentwicklung, Industriedesign und strategische Arbeit für Unternehmen aus unterschiedlichen Branchen.</p>
+      </div>
+      <p class="agency-intro">Neben meinen eigenen Arbeiten konnte ich in der Agentur und als Freelancer an anspruchsvollen Industrie- und Konsumgüterprojekten mitwirken. Die Auswahl zeigt unterschiedliche Aufgaben: von der Produktgestaltung über Vorstudien bis zur Erneuerung ganzer Produktlinien und Portfolios.</p>
+      <div class="agency-grid">
+        <article class="agency-card featured">
+          <div class="agency-kicker">Agenturtätigkeit · Vetica</div>
+          <h3>Roche Diagnostics</h3>
+          <h4>cobas® prime</h4>
+          <p>Industriedesign für das cobas prime Laborsystem von Roche Diagnostics. Als Designer bei Vetica an der Entwicklung und Ausarbeitung des Produktdesigns beteiligt.</p>
+          <div class="agency-meta">Industriedesign · Produktentwicklung</div>
+          <div class="agency-links"><a href="https://diagnostics.roche.com/de/de/products/instruments/cobas-prime-with-process-plus-module-ins-6752.html" target="_blank" rel="noopener noreferrer">cobas® prime bei Roche ↗</a></div>
+          <h4>LightCycler® PRO</h4>
+          <p>Mitarbeit an einer Vorstudie für das LightCycler® PRO PCR-System. Untersuchung konzeptioneller und gestalterischer Ansätze für eine neue Laborgerätegeneration.</p>
+          <div class="agency-meta">Vorstudie · Konzeptentwicklung</div>
+          <div class="agency-links"><a href="https://diagnostics.roche.com/de/de/products/instruments/lightcycler-pro-ins-6284.html" target="_blank" rel="noopener noreferrer">LightCycler® PRO bei Roche ↗</a></div>
+        </article>
+        <article class="agency-card">
+          <div class="agency-kicker">Industriedesign</div>
+          <h3>Meyer Burger</h3>
+          <h4>DW 291 Diamond Wire Saw</h4>
+          <p>Massgebliche Mitarbeit an der DW 291 Diamond Wire Saw von Meyer Burger.</p>
+          <div class="agency-meta">Industriedesign · Produktentwicklung</div>
+        </article>
+        <article class="agency-card">
+          <div class="agency-kicker">Freelance · Eigenverantwortlich</div>
+          <h3>Speedgoat</h3>
+          <h4>Real-Time Target Machines</h4>
+          <p>Eigenständige gestalterische Erneuerung und Weiterentwicklung der Speedgoat-Produktlinie. Entwicklung eines konsistenten Produktauftritts über die Produktvarianten Performance, Pulse und Mobile hinweg.</p>
+          <div class="agency-meta">Produktlinienentwicklung · Industriedesign</div>
+          <div class="agency-links">
+            <a href="https://www.speedgoat.com/products-services/real-time-target-machines/performance-real-time-target-machine" target="_blank" rel="noopener noreferrer">Performance ↗</a>
+            <a href="https://www.speedgoat.com/products-services/real-time-target-machines/pulse-real-time-target-machine" target="_blank" rel="noopener noreferrer">Pulse ↗</a>
+            <a href="https://www.speedgoat.com/products-services/real-time-target-machines/mobile-real-time-target-machine" target="_blank" rel="noopener noreferrer">Mobile ↗</a>
+          </div>
+        </article>
+        <article class="agency-card">
+          <div class="agency-kicker">Portfolioarchitektur</div>
+          <h3>DUSCHOLUX</h3>
+          <h4>Duschtrennwände</h4>
+          <p>Mitarbeit an der Analyse und Neustrukturierung des Duschwand-Portfolios. Reduktion der Produktvielfalt sowie klare Abgrenzung und Positionierung der einzelnen Produktgruppen.</p>
+          <div class="agency-meta">Portfolioanalyse · Sortimentsstruktur · Produktstrategie</div>
+          <div class="agency-links"><a href="https://www.duscholux.com/de_ch/Start/" target="_blank" rel="noopener noreferrer">DUSCHOLUX ↗</a></div>
+        </article>
+      </div>
+      <div class="agency-other">
+        <h3>Weitere Agenturprojekte</h3>
+        <div class="agency-other-list">
+          <div class="agency-other-item"><strong>Laufen</strong><p>Entwicklung einer Waschtischfamilie und eines Dusch-WC-Produkts. Die konkreten Produkte werden nicht näher bezeichnet.</p></div>
+          <div class="agency-other-item"><strong>Komax</strong><p>Mitarbeit an einer Drahtmanagementmaschine.</p></div>
+          <div class="agency-other-item"><strong>JTI</strong><p>Mitarbeit an einer E-Vaping-Produktlinie und an der Entwicklung einer übergreifenden Design-Guideline.</p></div>
+        </div>
+      </div>
+      <p class="agency-confidentiality">Einzelne Projektbeschreibungen sind aufgrund vertraglicher Vertraulichkeitsvereinbarungen bewusst auf die übergeordnete Aufgabe und meinen jeweiligen Beitrag beschränkt.</p>
     </section>
   </div>
   <section class="about" id="profil"><div class="wrap about-inner"><div><div class="eyebrow" data-cms-home="aboutEyebrow">Ein bisschen über mich</div><h2><span data-cms-home="aboutTitleLine1">Ich denke gern</span><br><span data-cms-home="aboutTitleLine2">quer. Und dann</span><br><span data-cms-home="aboutTitleLine3">baue ich es.</span></h2></div><div><p class="lead" data-cms-home="aboutLead">Mich interessieren die Ecken, Kanten und Möglichkeiten, die auftauchen, wenn man nicht sofort den naheliegenden Weg nimmt.</p><p data-cms-home="aboutParagraph1">Ich bin neugierig, manchmal hartnäckig und lieber mitten im Prozess als nur beim fertigen Bild. Ich will verstehen, wie etwas funktioniert, warum es so gemacht wird und ob es noch einen anderen Weg gibt. Mein Hintergrund verbindet Industrial Design mit technischem Handwerk. Das heisst: Ideen dürfen gross sein, müssen sich aber auch in Material, Konstruktion und Alltag bewähren.</p><p data-cms-home="aboutParagraph2">Ich mag keine Lösungen, die nur auf dem Bildschirm überzeugen. Mich interessiert der Moment, in dem eine Skizze zum Modell wird, ein Detail plötzlich Sinn ergibt oder ein Versuch scheitert und dadurch eine bessere Idee entsteht.</p><div class="skills"><div class="skill"><strong data-cms-home="skill1Title">Quer denken</strong><span data-cms-home="skill1Description">Bekannte Wege freundlich infrage stellen</span></div><div class="skill"><strong data-cms-home="skill2Title">Ausprobieren</strong><span data-cms-home="skill2Description">Lieber testen als endlos theoretisieren</span></div><div class="skill"><strong data-cms-home="skill3Title">Dranbleiben</strong><span data-cms-home="skill3Description">Details verbessern, bis es sich richtig anfühlt</span></div><div class="skill"><strong data-cms-home="skill4Title">Zusammen weiterdenken</strong><span data-cms-home="skill4Description">Gute Ideen werden im Austausch besser</span></div></div></div></div></section>
