@@ -49,11 +49,28 @@ async function main() {
         return;
       }
       const stat = await fs.stat(requested);
-      if (!stat.isFile()) throw new Error('Not a file');
+      if (!stat.isFile()) {
+        res.writeHead(404).end('Not found');
+        return;
+      }
+
+      const stream = fs.createReadStream(requested);
+      stream.on('error', () => {
+        if (res.headersSent) {
+          res.destroy();
+        } else {
+          res.writeHead(404).end('Not found');
+        }
+      });
+
       res.writeHead(200, { 'Content-Type': mime[path.extname(requested).toLowerCase()] || 'application/octet-stream' });
-      fs.createReadStream(requested).pipe(res);
+      stream.pipe(res);
     } catch {
-      res.writeHead(404).end('Not found');
+      if (res.headersSent) {
+        res.destroy();
+      } else if (!res.writableEnded) {
+        res.writeHead(404).end('Not found');
+      }
     }
   });
 
