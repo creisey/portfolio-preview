@@ -45,7 +45,7 @@ async function main() {
     let requested = root;
     try {
       pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
-      requested = path.resolve(root, pathname.replace(/^\\/+/, ''));
+      requested = path.resolve(root, pathname.startsWith('/') ? pathname.slice(1) : pathname);
       if (!requested.startsWith(root + path.sep) && requested !== root) {
         res.writeHead(403).end('Forbidden');
         return;
