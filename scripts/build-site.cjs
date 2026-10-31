@@ -1,4 +1,5 @@
-const fs = require('node:fs/promises');
+const fs = require('node:fs');
+const fsp = require('node:fs/promises');
 const path = require('node:path');
 const http = require('node:http');
 const { chromium } = require('playwright');
@@ -22,22 +23,22 @@ const mime = {
 };
 
 async function copySiteFiles(source, destination) {
-  await fs.mkdir(destination, { recursive: true });
-  for (const entry of await fs.readdir(source, { withFileTypes: true })) {
+  await fsp.mkdir(destination, { recursive: true });
+  for (const entry of await fsp.readdir(source, { withFileTypes: true })) {
     if (['.git', '.github', 'node_modules', 'dist'].includes(entry.name)) continue;
     const from = path.join(source, entry.name);
     const to = path.join(destination, entry.name);
     if (entry.isDirectory()) {
       await copySiteFiles(from, to);
     } else if (entry.isFile()) {
-      await fs.copyFile(from, to);
+      await fsp.copyFile(from, to);
     }
   }
 }
 
 async function main() {
-  const homepage = JSON.parse(await fs.readFile(path.join(root, 'content/homepage.json'), 'utf8'));
-  const projects = JSON.parse(await fs.readFile(path.join(root, 'content/projects.json'), 'utf8'));
+  const homepage = JSON.parse(await fsp.readFile(path.join(root, 'content/homepage.json'), 'utf8'));
+  const projects = JSON.parse(await fsp.readFile(path.join(root, 'content/projects.json'), 'utf8'));
   if (!Array.isArray(projects) || !projects.length) throw new Error('Project data is empty or invalid.');
 
   const server = http.createServer(async (req, res) => {
@@ -138,11 +139,11 @@ async function main() {
       document.querySelectorAll('[data-cms-home]').forEach(element => element.removeAttribute('data-cms-home'));
     });
 
-    await fs.rm(output, { recursive: true, force: true });
+    await fsp.rm(output, { recursive: true, force: true });
     await copySiteFiles(root, output);
-    await fs.writeFile(path.join(output, 'index.html'), await page.content(), 'utf8');
+    await fsp.writeFile(path.join(output, 'index.html'), await page.content(), 'utf8');
 
-    const generated = await fs.readFile(path.join(output, 'index.html'), 'utf8');
+    const generated = await fsp.readFile(path.join(output, 'index.html'), 'utf8');
     if (generated.includes('assets/js/cms-content.js') || generated.includes('data-cms-home')) {
       throw new Error('CMS runtime markers remain in generated HTML.');
     }
