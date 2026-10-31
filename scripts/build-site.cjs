@@ -51,7 +51,7 @@ async function main() {
         res.writeHead(403).end('Forbidden');
         return;
       }
-      const stat = await fs.stat(requested);
+      const stat = await fsp.stat(requested);
       if (!stat.isFile()) {
         res.writeHead(404).end('Not found');
         return;
