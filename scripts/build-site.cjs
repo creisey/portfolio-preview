@@ -41,9 +41,11 @@ async function main() {
   if (!Array.isArray(projects) || !projects.length) throw new Error('Project data is empty or invalid.');
 
   const server = http.createServer(async (req, res) => {
+    let pathname = '/';
+    let requested = root;
     try {
-      const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
-      const requested = path.resolve(root, '.' + pathname);
+      pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
+      requested = path.resolve(root, pathname.replace(/^\\/+/, ''));
       if (!requested.startsWith(root + path.sep) && requested !== root) {
         res.writeHead(403).end('Forbidden');
         return;
@@ -65,7 +67,8 @@ async function main() {
 
       res.writeHead(200, { 'Content-Type': mime[path.extname(requested).toLowerCase()] || 'application/octet-stream' });
       stream.pipe(res);
-    } catch {
+    } catch (error) {
+      console.error(`Static server error for ${pathname} (${requested}): ${error.message}`);
       if (res.headersSent) {
         res.destroy();
       } else if (!res.writableEnded) {
@@ -86,7 +89,14 @@ async function main() {
       if (message.type() === 'error') errors.push(message.text());
     });
     page.on('requestfailed', request => failedRequests.push(request.url() + ': ' + (request.failure()?.errorText || 'request failed')));
-    await page.goto(`http://127.0.0.1:${address.port}/index.html`, { waitUntil: 'domcontentloaded', timeout: 90000 });
+    page.on('response', response => {
+      if (response.status() >= 400) failedRequests.push(`${response.status()} ${response.url()}`);
+    });
+    const indexResponse = await page.goto(`http://127.0.0.1:${address.port}/index.html`, { waitUntil: 'domcontentloaded', timeout: 90000 });
+    if (!indexResponse || !indexResponse.ok()) {
+      const body = await page.locator('body').innerText().catch(() => '');
+      throw new Error(`Local index.html request failed: HTTP ${indexResponse?.status() ?? 'no response'}; title=${await page.title()}; body=${body.slice(0, 500)}; root=${root}`);
+    }
 
     try {
       await page.waitForFunction(expected => {
