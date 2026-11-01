@@ -781,7 +781,7 @@
   {
     "slug": "digital-portfolio",
     "title": "Digitales Portfolio",
-    "description": "Ein frühes interaktives Portfolio-Experiment aus der Bachelorzeit. Die damalige Live-Demo basierte auf Flash und wird hier deshalb nicht eingebettet.",
+    "description": "Ein frühes interaktives Portfolio-Experiment aus der Bachelorzeit. Die ursprüngliche Flash-Präsentation wird hier direkt mit Ruffle wiedergegeben.",
     "category": "Digitales Design",
     "label": "Bachelor · Digital",
     "image": "/assets/images/portfolio.jpg",
