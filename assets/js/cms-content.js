@@ -82,7 +82,61 @@
       copy.append(resources);
     }
 
-    if (project.embedUrl) {
+    if (project.slug === "digital-portfolio") {
+      const embed = make("div", "digital-portfolio-embed");
+      const playerContainer = make("div", "digital-portfolio-player");
+      playerContainer.id = "digital-portfolio-player";
+      playerContainer.setAttribute("role", "region");
+      playerContainer.setAttribute("aria-label", "Interaktives digitales Portfolio");
+      embed.append(playerContainer);
+      copy.append(embed);
+
+      const fallback = make("p", "digital-portfolio-fallback");
+      fallback.append(document.createTextNode("Falls die Wiedergabe nicht funktioniert: "));
+      const link = make("a", "", "Digitales Portfolio separat öffnen ↗");
+      link.href = "/assets/flash-portfolio/3.html";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      fallback.append(link);
+      copy.append(fallback);
+      copy.append(make("p", "digital-portfolio-note", "Interaktives Portfolio · Flash-Wiedergabe mit Ruffle"));
+
+      if (!navigator.webdriver) {
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.RufflePlayer.config = {
+          ...(window.RufflePlayer.config || {}),
+          scale: "showAll",
+          letterbox: "on"
+        };
+        const script = document.createElement("script");
+        script.src = "https://unpkg.com/@ruffle-rs/ruffle";
+        script.onload = () => {
+          const api = window.RufflePlayer && window.RufflePlayer.newest && window.RufflePlayer.newest();
+          if (!api) {
+            playerContainer.textContent = "Ruffle konnte nicht initialisiert werden.";
+            return;
+          }
+          const player = api.createPlayer();
+          player.style.display = "block";
+          player.style.position = "absolute";
+          player.style.inset = "0";
+          player.style.width = "100%";
+          player.style.maxWidth = "none";
+          player.style.height = "100%";
+          player.style.minWidth = "0";
+          player.style.minHeight = "0";
+          playerContainer.append(player);
+          Promise.resolve(player.load("/assets/flash-portfolio/Raster_portfolio_324.swf")).catch((error) => {
+            console.error("Ruffle konnte das Portfolio nicht laden:", error);
+            playerContainer.textContent = "Das Portfolio konnte nicht geladen werden.";
+          });
+        };
+        script.onerror = () => {
+          playerContainer.textContent = "Ruffle konnte nicht geladen werden.";
+        };
+        document.head.append(script);
+      }
+    } else if (project.embedUrl) {
       const embed = make("div", "digital-portfolio-embed");
       const frame = make("iframe", "digital-portfolio-frame");
       frame.src = project.embedUrl;
