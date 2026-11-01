@@ -545,5 +545,60 @@ body.project-open #cv { display: none !important; }
   renderRoute();
 })();
 </script>
+<script>
+(() => {
+  if (navigator.webdriver) return;
+  let initialized = false;
+  const startPlayer = (container) => {
+    if (initialized || !container) return;
+    initialized = true;
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+      ...(window.RufflePlayer.config || {}),
+      scale: "showAll",
+      letterbox: "on"
+    };
+    const script = document.createElement("script");
+    script.src = "https://unpkg.com/@ruffle-rs/ruffle";
+    script.onload = () => {
+      const api = window.RufflePlayer && window.RufflePlayer.newest && window.RufflePlayer.newest();
+      if (!api) {
+        container.textContent = "Ruffle konnte nicht initialisiert werden.";
+        return;
+      }
+      const player = api.createPlayer();
+      player.style.display = "block";
+      player.style.position = "absolute";
+      player.style.inset = "0";
+      player.style.width = "100%";
+      player.style.maxWidth = "none";
+      player.style.height = "100%";
+      player.style.minWidth = "0";
+      player.style.minHeight = "0";
+      container.append(player);
+      Promise.resolve(player.load("/assets/flash-portfolio/Raster_portfolio_324.swf")).catch((error) => {
+        console.error("Ruffle konnte das Portfolio nicht laden:", error);
+        container.textContent = "Das Portfolio konnte nicht geladen werden.";
+      });
+    };
+    script.onerror = () => {
+      container.textContent = "Ruffle konnte nicht geladen werden.";
+    };
+    document.head.append(script);
+  };
+  const existing = document.getElementById("digital-portfolio-player");
+  if (existing) {
+    startPlayer(existing);
+    return;
+  }
+  const observer = new MutationObserver(() => {
+    const container = document.getElementById("digital-portfolio-player");
+    if (!container) return;
+    observer.disconnect();
+    startPlayer(container);
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+})();
+</script>
 </body>
 </html>
