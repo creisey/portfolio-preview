@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Portfolio</title>
+
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background: transparent;
+      overflow-x: hidden;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    #portfolio {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+      aspect-ratio: 1024 / 513;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    #portfolio embed,
+    #portfolio object,
+    #portfolio ruffle-player {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100% !important;
+      height: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="portfolio">
+    <embed
+      src="Raster_portfolio_324.swf"
+      type="application/x-shockwave-flash"
+      quality="high"
+      width="1024"
+      height="513"
+      allowscriptaccess="always">
+  </div>
+</body>
+</html>
